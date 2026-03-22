@@ -1,0 +1,524 @@
+{
+  "v": "5.6.10",
+  "fr": 60,
+  "ip": 0,
+  "op": 540,
+  "w": 1140,
+  "h": 640,
+  "nm": "untitled",
+  "ddd": 0,
+  "assets": [
+    {
+      "id": "image_0",
+      "w": 298,
+      "h": 196,
+      "u": "images/",
+      "p": "layer_1.png",
+      "e": 0,
+      "src": "images/",
+      "file": "layer_1.png"
+    },
+    {
+      "id": "image_1",
+      "w": 122,
+      "h": 195,
+      "u": "images/",
+      "p": "layer_2.png",
+      "e": 0,
+      "src": "images/",
+      "file": "layer_2.png"
+    },
+    {
+      "id": "image_2",
+      "w": 49,
+      "h": 42,
+      "u": "images/",
+      "p": "layer_3.png",
+      "e": 0,
+      "src": "images/",
+      "file": "layer_3.png"
+    },
+    {
+      "id": "image_3",
+      "w": 149,
+      "h": 195,
+      "u": "images/",
+      "p": "layer_4.png",
+      "e": 0,
+      "src": "images/",
+      "file": "layer_4.png"
+    },
+    {
+      "id": "image_4",
+      "w": 63,
+      "h": 665,
+      "u": "images/",
+      "p": "layer_5.png",
+      "e": 0,
+      "src": "images/",
+      "file": "layer_5.png"
+    },
+    {
+      "id": "image_5",
+      "w": 486,
+      "h": 112,
+      "u": "images/",
+      "p": "layer_6.png",
+      "e": 0,
+      "src": "images/",
+      "file": "layer_6.png"
+    }
+  ],
+  "layers": [
+    {
+      "ddd": 0,
+      "ind": 1,
+      "ty": 2,
+      "nm": "L_0",
+      "refId": "image_0",
+      "sr": 0,
+      "ks": {
+        "p": {
+          "a": 1,
+          "k": [
+            {
+              "i": {
+                "x": 0.82,
+                "y": 1
+              },
+              "o": {
+                "x": 0.18,
+                "y": 0
+              },
+              "s": [
+                592.8000000000001,
+                840.3199999999999,
+                0
+              ],
+              "t": 0,
+              "ti": [
+                0,
+                0,
+                0
+              ],
+              "to": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "s": [
+                592.8000000000001,
+                200.31999999999996,
+                0
+              ],
+              "t": 60
+            }
+          ]
+        },
+        "s": {
+          "a": 0,
+          "k": [
+            60.85570469798658,
+            60.85570469798658,
+            100
+          ]
+        },
+        "o": {
+          "a": 0,
+          "k": 100
+        },
+        "a": {
+          "a": 0,
+          "k": [
+            149,
+            98
+          ]
+        }
+      },
+      "ao": 0,
+      "ip": 0,
+      "op": 540,
+      "st": 0,
+      "bm": 0,
+      "id": "layer_0"
+    },
+    {
+      "ddd": 0,
+      "ind": 2,
+      "ty": 2,
+      "nm": "L_1",
+      "refId": "image_1",
+      "sr": 0,
+      "ks": {
+        "p": {
+          "a": 1,
+          "k": [
+            {
+              "i": {
+                "x": 0.82,
+                "y": 1
+              },
+              "o": {
+                "x": 0.18,
+                "y": 0
+              },
+              "s": [
+                688.56,
+                865.28,
+                0
+              ],
+              "t": 0,
+              "ti": [
+                0,
+                0,
+                0
+              ],
+              "to": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "s": [
+                688.56,
+                225.27999999999992,
+                0
+              ],
+              "t": 60
+            }
+          ],
+          "ix": 1,
+          "x": "\n     var $bm_rt;\nif (time > 0) {\nconst axis = 'x';\nconst type = 'sin';\nconst dec = 0;\nconst angle = $bm_mul(Math.PI, 2);\nconst freq = 0.6666666666666666;\nconst amp = 7.98;\nconst output = $bm_div($bm_mul(Math[type]($bm_mul($bm_mul(time, angle), freq)), amp), Math.exp($bm_mul(time, dec)));\nif (axis === 'x') {\n $bm_rt = [\n value[0] + output,\nvalue[1]\n];\n} else if (axis === 'y') {\n    $bm_rt = [\n value[0],\n value[1] + output\n];\n} else {\n  $bm_rt = [\n value[0] + output,\n value[1] + output\n ];\n    }\n} else {\n    $bm_rt = value;\n}"
+        },
+        "s": {
+          "a": 0,
+          "k": [
+            61.37704918032787,
+            61.37704918032787,
+            100
+          ]
+        },
+        "o": {
+          "a": 0,
+          "k": 100
+        },
+        "a": {
+          "a": 0,
+          "k": [
+            61,
+            97.5
+          ]
+        }
+      },
+      "ao": 0,
+      "ip": 0,
+      "op": 540,
+      "st": 0,
+      "bm": 0,
+      "id": "layer_1"
+    },
+    {
+      "ddd": 0,
+      "ind": 3,
+      "ty": 2,
+      "nm": "L_2",
+      "refId": "image_2",
+      "sr": 0,
+      "ks": {
+        "p": {
+          "a": 1,
+          "k": [
+            {
+              "i": {
+                "x": 0.82,
+                "y": 1
+              },
+              "o": {
+                "x": 0.18,
+                "y": 0
+              },
+              "s": [
+                681.72,
+                897.9200000000001,
+                0
+              ],
+              "t": 0,
+              "ti": [
+                0,
+                0,
+                0
+              ],
+              "to": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "s": [
+                681.72,
+                257.92,
+                0
+              ],
+              "t": 60
+            }
+          ],
+          "ix": 2,
+          "x": "\n     var $bm_rt;\nif (time > 0) {\nconst axis = 'x';\nconst type = 'sin';\nconst dec = 0;\nconst angle = $bm_mul(Math.PI, 2);\nconst freq = 0.6666666666666666;\nconst amp = 7.98;\nconst output = $bm_div($bm_mul(Math[type]($bm_mul($bm_mul(time, angle), freq)), amp), Math.exp($bm_mul(time, dec)));\nif (axis === 'x') {\n $bm_rt = [\n value[0] + output,\nvalue[1]\n];\n} else if (axis === 'y') {\n    $bm_rt = [\n value[0],\n value[1] + output\n];\n} else {\n  $bm_rt = [\n value[0] + output,\n value[1] + output\n ];\n    }\n} else {\n    $bm_rt = value;\n}"
+        },
+        "s": {
+          "a": 0,
+          "k": [
+            62.08163265306123,
+            62.08163265306123,
+            100
+          ]
+        },
+        "o": {
+          "a": 0,
+          "k": 100
+        },
+        "a": {
+          "a": 0,
+          "k": [
+            49,
+            0
+          ]
+        }
+      },
+      "ao": 0,
+      "ip": 0,
+      "op": 540,
+      "st": 0,
+      "bm": 0,
+      "id": "layer_2"
+    },
+    {
+      "ddd": 0,
+      "ind": 4,
+      "ty": 2,
+      "nm": "L_3",
+      "refId": "image_3",
+      "sr": 0,
+      "ks": {
+        "p": {
+          "a": 1,
+          "k": [
+            {
+              "i": {
+                "x": 0.82,
+                "y": 1
+              },
+              "o": {
+                "x": 0.18,
+                "y": 0
+              },
+              "s": [
+                696.54,
+                865.28,
+                0
+              ],
+              "t": 0,
+              "ti": [
+                0,
+                0,
+                0
+              ],
+              "to": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "s": [
+                696.54,
+                225.27999999999992,
+                0
+              ],
+              "t": 60
+            }
+          ],
+          "ix": 3,
+          "x": "\n     var $bm_rt;\nif (time > 0) {\nconst axis = 'x';\nconst type = 'sin';\nconst dec = 0;\nconst angle = $bm_mul(Math.PI, 2);\nconst freq = 0.6666666666666666;\nconst amp = 7.98;\nconst output = $bm_div($bm_mul(Math[type]($bm_mul($bm_mul(time, angle), freq)), amp), Math.exp($bm_mul(time, dec)));\nif (axis === 'x') {\n $bm_rt = [\n value[0] + output,\nvalue[1]\n];\n} else if (axis === 'y') {\n    $bm_rt = [\n value[0],\n value[1] + output\n];\n} else {\n  $bm_rt = [\n value[0] + output,\n value[1] + output\n ];\n    }\n} else {\n    $bm_rt = value;\n}"
+        },
+        "s": {
+          "a": 0,
+          "k": [
+            61.24832214765101,
+            61.24832214765101,
+            100
+          ]
+        },
+        "o": {
+          "a": 0,
+          "k": 100
+        },
+        "a": {
+          "a": 0,
+          "k": [
+            74.5,
+            97.5
+          ]
+        }
+      },
+      "ao": 0,
+      "ip": 0,
+      "op": 540,
+      "st": 0,
+      "bm": 0,
+      "id": "layer_3"
+    },
+    {
+      "ddd": 0,
+      "ind": 5,
+      "ty": 2,
+      "nm": "L_4",
+      "refId": "image_4",
+      "sr": 0,
+      "ks": {
+        "p": {
+          "a": 1,
+          "k": [
+            {
+              "i": {
+                "x": 0.82,
+                "y": 1
+              },
+              "o": {
+                "x": 0.18,
+                "y": 0
+              },
+              "s": [
+                498.18,
+                938.24,
+                0
+              ],
+              "t": 0,
+              "ti": [
+                0,
+                0,
+                0
+              ],
+              "to": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "s": [
+                498.18,
+                298.24,
+                0
+              ],
+              "t": 60
+            }
+          ]
+        },
+        "s": {
+          "a": 0,
+          "k": [
+            61.285714285714285,
+            61.285714285714285,
+            100
+          ]
+        },
+        "o": {
+          "a": 0,
+          "k": 100
+        },
+        "a": {
+          "a": 0,
+          "k": [
+            31.5,
+            332.5
+          ]
+        }
+      },
+      "ao": 0,
+      "ip": 0,
+      "op": 540,
+      "st": 0,
+      "bm": 0,
+      "id": "layer_4"
+    },
+    {
+      "ddd": 0,
+      "ind": 6,
+      "ty": 2,
+      "nm": "L_5",
+      "refId": "image_5",
+      "sr": 0,
+      "ks": {
+        "p": {
+          "a": 0,
+          "k": [
+            502.74,
+            492.8
+          ]
+        },
+        "s": {
+          "a": 1,
+          "k": [
+            {
+              "i": {
+                "x": 0.85,
+                "y": 1
+              },
+              "o": {
+                "x": 1,
+                "y": 0
+              },
+              "s": [
+                0,
+                0,
+                100
+              ],
+              "t": 30,
+              "ti": [
+                0,
+                0,
+                0
+              ],
+              "to": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "s": [
+                60.18518518518518,
+                58.75,
+                100
+              ],
+              "t": 96
+            }
+          ]
+        },
+        "o": {
+          "a": 0,
+          "k": 30
+        },
+        "a": {
+          "a": 0,
+          "k": [
+            243,
+            56
+          ]
+        }
+      },
+      "ao": 0,
+      "ip": 0,
+      "op": 540,
+      "st": 0,
+      "bm": 0,
+      "id": "layer_5"
+    }
+  ],
+  "markers": []
+}

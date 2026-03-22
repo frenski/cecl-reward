@@ -1,0 +1,239 @@
+
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9" lang=""> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10" lang=""> <![endif]-->
+<!--[if gt IE 9><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic' rel='stylesheet' type='text/css'>
+    		<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/normalize.min.css">
+    		<link rel="stylesheet" href="css/main-tmpl.css">
+
+        <script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+        <style>
+
+          .table-wrapper {
+            margin-top: 5vh;
+            margin-left: 32vw;
+          }
+
+          #thetext2 {
+            margin-top: 4vw;
+            font-size: 1.5vw;
+            line-height: 2vw;
+          }
+
+          #thetext2 span {
+            display: block;
+            width: 100%;
+            margin-left: -100%;
+            opacity: 0;
+          }
+
+          span.text-anim {
+            margin-left: 0 !important;
+            opacity: 1 !important;
+            transition: 3s all ease;
+          }
+
+          .title-page-top {
+            position: relative;
+            z-index: 100;
+          }
+
+          #leftheading-wrapper {
+            left: 0;
+            top: 0;
+            position: absolute;
+            z-index: 0;
+          }
+
+          #leftheading-block {
+            background: #feb42b;
+            height: 100vh;
+            width: 18vw;
+            position: absolute;
+            left: 0;
+            top: 0;
+          }
+
+          #leftheading-text {
+            top: 30vw;
+            position: absolute;
+            left: 8vw;
+            width: 15vw;
+            padding: 0.8vw 1.2vw;
+            border-radius: 1vw;
+            font-size: 2.5vw;
+          }
+
+          #leftheading-number {
+            position: absolute;
+            top: 7vw;
+            left: 9vw;
+            width: 6vw;
+            height: 6vw;
+            text-align: center;
+            padding: 1;
+            border-radius: 3vw;
+            font-size: 5vw;
+            background: #2d2d2d;
+            color: white !important;
+          }
+
+          #theimage1 {
+            border: 0.8vw solid #2d2d2d;
+            border-radius: 50%;
+            width: 18vw;
+            height: 18vw;
+            top: 15vw;
+            left: 5vw;
+            position: absolute;
+          }
+
+          .tab-icon {
+            width: 10vw;
+            padding: 2vw;
+            text-align: center;
+            border-top-left-radius: 1vw;
+            border-bottom-left-radius: 1vw;
+            color: white;
+            font-family: "Quicksand", sans-serif;
+            font-weight: bold;
+            font-size: 1.8vw;
+            cursor: pointer;
+          }
+
+          .tab-icon img {
+            width: 100%;
+          }
+
+          .tab-icon-selected {
+            background-color: rgba(0, 0, 0, 0.2);
+          }
+
+          .tab-text-wrapper {
+            background-color: rgba(0, 0, 0, 0.2);
+            width: 45vw;
+            border-top-right-radius: 1vw;
+            border-bottom-right-radius: 1vw;
+          }
+
+          .tab-text {
+            position: absolute;
+            top: 3vw;
+            left: 18vw;
+            width: 37.5vw;
+            font-size: 1.2vw;
+            line-height: 1.8vw;
+            color: white;
+            text-align: left;
+            font-weight: lighter;
+          }
+
+          @media only screen and (max-width: 768px) {
+
+            #thetext2{
+              font-size: 1.8vw;
+              line-height: 2.4vw;
+            }
+
+          }
+        </style>
+
+    </head>
+
+    <body>
+
+		<div id="music-container"></div>
+		<div id="voice-container"></div>
+		<div id="soundfx-container"></div>
+
+		<div class="loading-container">
+		    <div class="loading-circle"></div>
+		</div>
+
+
+		<!-- Template specific html -->
+
+		<article id="organisations-wrapper">
+      <header>
+				<h1 class="title-page title-page-top pagetheme-text-darkcolour-bw centered">
+          <span class="edit-text" id="content_text0"></span>
+        </h1>
+		  </header>
+      <div id="leftheading-wrapper">
+        <div id="leftheading-block" class="">&nbsp;</div>
+        <img class="centered float anim-appear-scale-bounce anim-delay-1" id="theimage1" src="" />
+        <h2 id="leftheading-number" class="secondary-backcolour-dark title-page-big anim-appear-scale-bounce anim-delay-05"><span class="edit-text" id="content_text5"></span></h2>
+        <h2 id="leftheading-text" class="secondary-backcolour-dark title-page-medium-bold anim-appear-scale-bounce anim-delay-105"><span class="edit-text" id="content_text6"></span></h2>
+      </div>
+
+      <section>
+
+        <table class="table-wrapper">
+
+          <tr>
+      			<th id="images-wrapper" class="relative">
+
+              <script type="application/mustache" id="tmpl-slides">
+
+                  <div id="tab-icon{{order}}" class="tab-icon" data-id="{{order}}">
+                    <img src="../files/{{icon}}" /><br>
+                    <span class="edit-text" id="content_text10{{order}}"></span>
+                  </div>
+                  <div id="tab-text{{order}}" class="tab-text">
+                    <span class="edit-text" id="content_text20{{order}}"></span>
+                  </div>
+              </script>
+
+    			  </th>
+
+            <th class="tab-text-wrapper">
+
+            </th>
+
+          </tr>
+
+        </table>
+
+		</article>
+
+		<!-- End of template specific html -->
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+		<script src="js/vendor/jquery.jeditable.min.js"></script>
+
+		<script src="js/config-tmpl.js"></script>
+		<script src="js/lib/ylearn-tmpl.js"></script>
+		<script src="js/main-tmpl.js"></script>
+
+		<!-- Template specific scripts -->
+    <script src="js/vendor/mustache.js"></script>
+		<script src="js/tmpl/tmpl-vertical-tabs.js"></script>
+		<!-- End of template specific scripts -->
+
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,51 @@
+/*! Theme style file - PURPLE */
+
+.whole-container{
+	background-color: #32352f;
+}
+
+.title-section-pages{
+	color: #ae2f54;
+}
+
+.nav-pages-item-inner-arrow,
+.nav-pages-item-inner-arrow:link,
+.nav-pages-item-inner-arrow:visited{
+	color: white;
+	background: #e92d66;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.nav-pages-item-inner-text {
+	background: #e92d66;
+}
+
+.section-indicator{
+	color: white;
+}
+
+.lt-ie9 .section-indicator{
+	background-color: transparent;
+}
+
+.sliding-menu-wrapper {
+	background: white;
+	border-right: 10px solid #2D2D2D;
+}
+
+#sliding-menu-button {
+	background-color: #2D2D2D;
+}
+
+#sliding-menu-links li.sliding-menu-unit {
+	color: #FFB229;
+}
+
+#pagetheme-text-darkcolour-bw {
+	background: #2D2D2D;
+	color: white
+}

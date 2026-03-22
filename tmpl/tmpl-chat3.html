@@ -1,0 +1,279 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9" lang=""> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10" lang=""> <![endif]-->
+<!--[if gt IE 9><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic' rel='stylesheet' type='text/css'>
+		    <link href='https://fonts.googleapis.com/css?family=Quicksand:700' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/normalize.min.css">
+		    <link rel="stylesheet" href="css/main-tmpl.css">
+
+    		<!-- Template specific css -->
+        <link rel="stylesheet" media="all" href="css/vendor/setup.css" />
+        <link rel="stylesheet" media="all" href="css/vendor/says.css" />
+        <link rel="stylesheet" media="all" href="css/vendor/reply.css" />
+        <link rel="stylesheet" media="all" href="css/vendor/typing.css" />
+        <link rel="stylesheet" media="all" href="css/vendor/input.css" />
+    		<!-- End of template specific css -->
+
+        <script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+        <style>
+
+        h1.title-page {
+          text-align: left;
+        }
+
+        .title-avatar {
+          width: 80px;
+          border: 5px solid #f7f7f7;
+          border-radius: 100%;
+          position: absolute;
+          left: 25px;
+          top: 25px;
+        }
+
+        .chat-container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            width: 100%;
+            height: 700px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            margin: 1em auto;
+        }
+
+        .chat-header {
+            background: linear-gradient(135deg, #315737 0%, #3BA848 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: "Bangers";
+            position: relative;
+        }
+
+        .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+            background: #f7f7f7;
+        }
+
+        .message {
+            display: flex;
+            margin-bottom: 20px;
+            align-items: flex-start;
+            animation: slideIn 0.3s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .message.question {
+            flex-direction: row-reverse;
+        }
+
+        .message.answer {
+            flex-direction: row;
+        }
+
+        .avatar {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+            flex-shrink: 0;
+            font-size: 18px;
+            overflow: hidden;
+            border: 2px solid white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .message.question .avatar {
+            margin-left: 12px;
+        }
+
+        .message.answer .avatar {
+            margin-right: 12px;
+        }
+
+        .message-content {
+            max-width: 70%;
+            padding: 12px 16px;
+            border-radius: 18px;
+            word-wrap: break-word;
+        }
+
+        .message.question .message-content {
+            background: linear-gradient(-120deg, rgba(70,87,102,1) 0%, rgba(30,55,70,1) 100%);
+            color: white;
+            border-bottom-right-radius: 4px;
+        }
+
+        .message.answer .message-content {
+            background: white;
+            color: #333;
+            border-bottom-left-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .sender-name {
+            font-size: 11px;
+            font-weight: bold;
+            margin-bottom: 4px;
+            opacity: 0.8;
+        }
+
+        .chat-controls {
+            padding: 20px;
+            background: white;
+            border-top: 1px solid #e0e0e0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .next-btn {
+            background: linear-gradient(135deg, #315737 0%, #3BA848 100%);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            flex: 1;
+            max-width: 200px;
+        }
+
+        .next-btn:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .next-btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+
+        .progress {
+            color: #666;
+            font-size: 14px;
+            margin-right: 15px;
+        }
+
+        .chat-title-big {
+          font-size: 2em;
+          line-height: 1.2em;
+          padding: 0;
+          margin: 0 20px 0 120px;
+          text-align: left;
+        }
+
+        </style>
+
+    </head>
+
+    <body class="width100per height100per">
+
+  		<div id="music-container"></div>
+  		<div id="voice-container"></div>
+  		<div id="soundfx-container"></div>
+
+  		<div class="loading-container">
+  		    <div class="loading-circle"></div>
+  		</div>
+
+
+		<!-- Template specific html -->
+
+		<article class="doc-wrapper width100per height100per">
+      <header>
+				<h1 class="title-page title-page-top pagetheme-text-darkcolour-bw centered">
+          <span class="edit-text" id="content_text0"></span>
+        </h1>
+		  </header>
+			<section class="doc-container width100per centered relative">
+
+        <div id="chat-wrapper">
+          <div class="chat-container">
+              <div class="chat-header">
+                <img id="reference-block-img" class="reference-block-img title-avatar"/>
+                <h1 class="chat-title-big pagetheme-text-lightcolour"><span class="edit-text" id="content_text2"></span></h1>
+              </div>
+              <div class="chat-messages" id="chatMessages"></div>
+              <div class="chat-controls">
+                  <div class="progress" id="progress">0/0</div>
+                  <button class="next-btn" id="nextBtn">Next</button>
+              </div>
+          </div>
+        </div>
+
+			</section>
+
+      <div class="height100">&nbsp;</div>
+
+		</article>
+
+		<!-- End of template specific html -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+		<script src="js/vendor/jquery.jeditable.min.js"></script>
+
+		<script src="js/config-tmpl.js"></script>
+		<script src="js/lib/ylearn-tmpl.js"></script>
+		<script src="js/main-tmpl.js"></script>
+
+		<!-- Template specific scripts -->
+		<script src="js/vendor/mustache.js"></script>
+		<script src="js/tmpl/tmpl-chat3.js"></script>
+		<!-- End of template specific scripts -->
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+    </script>
+
+    </body>
+
+</html>

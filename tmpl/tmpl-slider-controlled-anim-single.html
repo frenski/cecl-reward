@@ -1,0 +1,290 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9" lang=""> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10" lang=""> <![endif]-->
+<!--[if gt IE 9><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic' rel='stylesheet' type='text/css'>
+		    <link href='https://fonts.googleapis.com/css?family=Quicksand:700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../css/normalize.min.css">
+		    <link rel="stylesheet" href="css/main-tmpl.css">
+
+    		<!-- Template specific css -->
+    		<link rel="stylesheet" href="css/vendor/jquery.nouislider.css" />
+    		<!-- End of template specific css -->
+
+        <script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+        <style>
+          .subtitle-page {
+            color: white;
+            padding-top: 1vw;
+          }
+          .popup-specific {
+            right: 5%;
+            left: auto;
+            margin-left:0;
+            top: 8vw;
+            width: 30%;
+            font-size: 1.4vw;
+            line-height: 2vw;
+          }
+
+          .popup-specific-content {
+            padding: 7%;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+          }
+
+          .doc-container {
+            min-height: 200px;
+          }
+
+          #lt-player-main {
+            z-index:1;
+            width:68%;
+            margin-top: 5vw;
+          }
+
+          #slider-wrapper {
+            z-index: 10;
+            width: 16vw;
+            height: 16vw;
+            border-radius: 8vw;
+            background-color: white;
+            top: 20vw;
+            right: 17vw;
+          }
+
+          #item-slider {
+            margin-left: 3.2vw;
+            transform: rotate(270deg);
+            margin-top: 7.5vw;
+          }
+
+          #deg-indicator {
+            color: white;
+            background-color: #18a8b7;
+            position: absolute;
+            z-index: 100;
+            border-radius: 0.5vw;
+            padding: 5%;
+            left: 65%;
+            top: 25%;
+            width: 60%;
+          }
+
+          #deg-indicator::after {
+            content: "";
+            width: 0;
+            height: 0;
+            border-right: 12px solid #18a8b7;
+            border-right-color: #18a8b7;
+            border-bottom: 12px solid transparent;
+            border-top: 12px solid transparent;
+            position: absolute;
+            top: 20%;
+            left: -12px;
+          }
+
+          #guess-submit {
+            background-color: #2D2D2D;
+            color: white;
+            font-weight: bold;
+            font-family: "Quicksand", Helvetica, sans-serif;
+            border: 0;
+            border-radius: 6px;
+            display: block;
+            float: right;
+            margin-left: 10px;
+            padding: 5px 10px;
+          }
+
+          #deg-indicator {
+            color: white;
+            font-weight: bold;
+            font-family: "Quicksand", Helvetica, sans-serif;
+            font-size: 1.2em;
+          }
+
+          input[type=range] {
+            background-color: transparent;
+            -webkit-appearance: none;
+          }
+          input[type=range]:focus {
+            outline: none;
+          }
+          input[type=range]::-webkit-slider-runnable-track {
+            background: #2d2d2d;
+            border: 0;
+            border-radius: 10px;
+            width: 100%;
+            height: 10px;
+            cursor: pointer;
+          }
+          input[type=range]::-webkit-slider-thumb {
+            margin-top: -11px;
+            width: 32px;
+            height: 32px;
+            background: #ffc82c;
+            border: 0;
+            border-radius: 16px;
+            cursor: pointer;
+            -webkit-appearance: none;
+          }
+          input[type=range]:focus::-webkit-slider-runnable-track {
+            background: #3a3a3a;
+          }
+          input[type=range]::-moz-range-track {
+            background: #2d2d2d;
+            border: 0;
+            border-radius: 10px;
+            width: 100%;
+            height: 10px;
+            cursor: pointer;
+          }
+          input[type=range]::-moz-range-thumb {
+            width: 3vw;
+            height: 3vw;
+            background: #b39c18;
+            border: 0;
+            border-radius: 1.5vw;
+            cursor: pointer;
+          }
+          input[type=range]::-ms-track {
+            background: transparent;
+            border-color: transparent;
+            border-width: 16.6px 0;
+            color: transparent;
+            width: 100%;
+            height: 10px;
+            cursor: pointer;
+          }
+          input[type=range]::-ms-fill-lower {
+            background: #202020;
+            border: 0;
+            border-radius: 20px;
+          }
+          input[type=range]::-ms-fill-upper {
+            background: #2d2d2d;
+            border: 0;
+            border-radius: 20px;
+          }
+          input[type=range]::-ms-thumb {
+            width: 32px;
+            height: 32px;
+            background: #ffc82c;
+            border: 0;
+            border-radius: 16px;
+            cursor: pointer;
+            margin-top: 0px;
+            /*Needed to keep the Edge thumb centred*/
+          }
+          input[type=range]:focus::-ms-fill-lower {
+            background: #2d2d2d;
+          }
+          input[type=range]:focus::-ms-fill-upper {
+            background: #3a3a3a;
+          }
+
+          @media only screen and (max-width: 768px) {
+
+            .popup-specific {
+              font-size: 2vw;
+              line-height: 2.5vw;
+              width: 40%;
+            }
+
+          }
+
+          @media only screen and (max-width: 480px) {
+
+            .popup-specific {
+              font-size: 2.5vw;
+              line-height: 3vw;
+              width: 50%;
+            }
+
+          }
+        </style>
+
+    </head>
+
+    <body class="width100per height100per">
+
+  		<div id="music-container"></div>
+  		<div id="voice-container"></div>
+  		<div id="soundfx-container"></div>
+
+  		<div class="loading-container">
+  		    <div class="loading-circle"></div>
+  		</div>
+
+			<div class="popup-general popup-specific">
+				<div class="popup-general-content popup-specific-content secondary-backcolour-dark pagetheme-text-lightcolour">
+          <p id="answers-response-feedback" class="text-left margin0">
+            <span id="content_text2" class="edit-text"></span>
+          </p>
+        </div>
+			</div>
+
+		<!-- Template specific html -->
+
+		<article class="doc-wrapper width100per height100per">
+      <header>
+				<h1 class="title-page title-page-top pagetheme-text-darkcolour-bw centered">
+          <span class="edit-text" id="content_text0"></span>
+        </h1>
+		  </header>
+			<section class="doc-container width100per centered relative">
+        <h2 id="intro-text" class="subtitle-page text-center width80per centered opacity0 anim-appear-margin-bottom">
+          <span class="edit-text" id="content_text1"></span>
+        </h2>
+        <div id="lt-player-main" class=""></div>
+        <div id="slider-wrapper" class="absolute shadow-material-soft opacity0 anim-appear-margin-bottom">
+          <input id="item-slider" type="range" min="0" max="10" value="8" step="2" class="item-slider centered float width60per">
+          <div id="deg-indicator" class="shadow-material-soft"><span id="degrees-num">4</span> <button id="guess-submit"><span class="edit-text" id="content_text3">OK</span></button></div>
+        </div>
+			</section>
+
+      <div class="height100">&nbsp;</div>
+
+		</article>
+
+		<!-- End of template specific html -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+		<script src="js/vendor/jquery.jeditable.min.js"></script>
+
+		<script src="js/config-tmpl.js"></script>
+		<script src="js/lib/ylearn-tmpl.js"></script>
+		<script src="js/main-tmpl.js"></script>
+
+		<!-- Template specific scripts -->
+		<script src="js/vendor/mustache.js"></script>
+    <script src="js/vendor/lottie.js"></script>
+		<script src="js/tmpl/tmpl-slider-controlled-anim-single.js"></script>
+		<!-- End of template specific scripts -->
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+    </script>
+
+    </body>
+
+</html>

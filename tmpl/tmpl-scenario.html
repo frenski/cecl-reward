@@ -1,0 +1,127 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9" lang=""> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10" lang=""> <![endif]-->
+<!--[if gt IE 9><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+				
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Quicksand:700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../css/normalize.min.css">
+		<link rel="stylesheet" href="css/main-tmpl.css">
+		
+		<!-- Template specific css -->
+		<link rel="stylesheet" href="css/vendor/jquery.nouislider.css" />
+		<!-- End of template specific css -->
+
+        <script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+
+    <body>
+	
+		<div class="loading-container">
+		    <div class="loading-circle"></div>
+		</div>
+		
+		<div class="popup-container">
+			<div class="popup-general" title="">
+				<div class="popup-general-title"></div>
+				<div class="popup-general-content"></div>
+				<div class="text-center">
+					<a href="#" class="popup-general-close button-standard button-standard-light margin-bottom10">OK</a>
+				</div>
+			</div>
+		</div>
+
+		
+		<!-- Template specific html -->
+		
+		<article class="question-wrapper">
+			
+		    <header class="scenario-header">
+				<h1 class="title-page title-page-expanded pagetheme-text-colour text-center centered width90per">
+					<span class="edit-text" id="content_text0"></span>
+				</h1>
+				<div class="title-image title-image-back width100per height150 high-res150v">&nbsp;</div>
+		    </header>
+			<section class="scenario-story width90per centered background-lightgray-transparent margin-top-40">
+				<p class="padding20 text-italic"><span class="edit-text" id="content_text1"></span></p>
+			</section>
+			<section class="scenario-answers width90per centered">
+				<h1 class="title-page pagetheme-text-colour text-center centered width90per">
+					<span class="edit-text" id="content_text2"></span>
+				</h1>
+				<div class="scenario-answers-wrapper">
+					<script type="application/mustache" id="tmpl-answer">
+						<div id="trigger-to-popup{{id}}" class="trigger-to-popup scenario-answer button-type-element display-table width100per margin-bottom10 element-clickable">
+							<div class="display-tablecell display-tablecell-middle width15per text-center text-label-extrabig element-background-dark">
+							<span class="edit-text content_text{{sequenceTextId}}"></span>
+							</div>
+							<div class="display-tablecell width85per element-background-verylight">
+								<p class="padding10">
+									<span class="edit-text content_text{{textId}}"></span>
+								</p>
+							</div>
+						</div>
+						<div class="trigger-to-popup-data trigger-to-popup-data{{id}} correct-item correct-item-level{{correct}} margin-bottom10">
+							<p class="padding10 trigger-to-popup-data-title">
+								<span class="edit-text content_text{{responseTextTitleId}}"></span>
+							</p>
+							<p class="padding10 trigger-to-popup-data-content">
+								<span class="edit-text content_text{{responseTextContenId}}"></span>
+							</p>
+						</div>
+					</script>
+				</div>
+				
+				<div class="height150">&nbsp;</div>
+				
+			</section>
+			
+			<section id="admin-hidden">
+				<script type="application/mustache" id="tmpl-answer-admin">
+					<div><span id="content_text{{sequenceTextId}}" class="edit-text"></span></div>
+					<div><span id="content_text{{textId}}" class="edit-text"></span></div>
+					<div><span id="content_text{{responseTextTitleId}}" class="edit-text"></span></div>
+					<div><span id="content_text{{responseTextContenId}}" class="edit-text"></span></div>
+				</script>
+			</section>
+			
+		</article>
+		
+		<!-- End of template specific html -->
+		
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+		<script src="js/vendor/jquery.jeditable.min.js"></script>
+		
+		<script src="js/config-tmpl.js"></script>
+		<script src="js/lib/ylearn-tmpl.js"></script>
+		<script src="js/main-tmpl.js"></script>
+		
+		<!-- Template specific scripts -->
+		<script src="js/vendor/mustache.js"></script>
+		<script src="js/tmpl/tmpl-scenario.js"></script>
+		<!-- End of template specific scripts -->
+		
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+
+</html>
+

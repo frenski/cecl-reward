@@ -1,0 +1,1698 @@
+{
+	"sections": [{
+			"order": 0,
+			"pages": [
+				{
+						"id": 0,
+						"tmpl": "tmpl-video-quote",
+						"visible": true,
+						"order": 0,
+						"tmplParams": {
+							"backColor":"#404338",
+							"theme":"yellow",
+							"video_provider":"youtube",
+							"video_url":"XXX",
+							"author_pic":"profile-pics/pp-author.png"
+						}
+				},
+				{
+					"id": 2,
+					"tmpl": "tmpl-objectives",
+					"visible": true,
+					"order": 2,
+					"tmplParams": {
+						"backColor": "fff",
+						"theme": "yellow",
+						"noteType": "question",
+						"messages": [{
+								"order": 0
+							},
+							{
+								"order": 1
+							},
+							{
+								"order": 2
+							}
+						]
+					}
+				},
+				{
+					"id": 3,
+					"tmpl": "tmpl-guessing-sequence",
+					"visible": true,
+					"order": 3,
+					"tmplParams": {
+						"backColor": "#FFF",
+						"theme": "yellow",
+						"extraNote": true,
+						"sliders": [
+							{
+								"min": 0,
+								"default": 1,
+								"max": 2,
+								"step": 1,
+								"correct": 2
+							},
+							{
+								"min": 0,
+								"default": 1,
+								"max": 2,
+								"step": 1,
+								"correct": 0
+							},
+							{
+								"min": 0,
+								"default": 1,
+								"max": 2,
+								"step": 1,
+								"correct": 2
+							},
+							{
+								"min": 0,
+								"default": 1,
+								"max": 2,
+								"step": 1,
+								"correct": 0
+							},
+							{
+								"min": 0,
+								"default": 1,
+								"max": 2,
+								"step": 1,
+								"correct": 0
+							},
+							{
+								"min": 0,
+								"default": 1,
+								"max": 2,
+								"step": 1,
+								"correct": 0
+							},
+							{
+								"min": 0,
+								"default": 1,
+								"max": 2,
+								"step": 1,
+								"correct": 0
+							}
+						]
+					}
+				},
+				{
+						"id": 4,
+						"tmpl": "tmpl-video-presentation",
+						"visible": true,
+						"order": 4,
+						"tmplParams": {
+								"slides": [
+										{
+												"file": "presentations/m1_p1/Slide1.jpeg",
+												"order": 0,
+												"time": "00:00:00"
+										},
+										{
+												"file": "presentations/m1_p1/Slide2.jpeg",
+												"order": 1,
+												"time": "00:00:25"
+										},
+										{
+												"file": "presentations/m1_p1/Slide3.jpeg",
+												"order": 2,
+												"time": "00:01:30"
+										},
+										{
+												"file": "presentations/m1_p1/Slide4.jpeg",
+												"order": 3,
+												"time": "00:01:55"
+										},
+										{
+												"file": "presentations/m1_p1/Slide5.jpeg",
+												"order": 4,
+												"time": "00:03:02"
+										},
+										{
+												"file": "presentations/m1_p1/Slide6.jpeg",
+												"order": 5,
+												"time": "00:03:25"
+										}
+								],
+								"theme": "yellow",
+								"video_provider": "youtube",
+								"video_url": "19k_3_4qRQE",
+								"backColor": "#3f3f3f"
+						}
+				},
+				{
+					"id": 5,
+					"tmpl": "tmpl-rp-fillblank",
+					"visible": true,
+					"order": 5,
+					"tmplParams": {
+						"backColor": "#3f3f3f",
+						"theme": "yellow",
+						"noteType": "question",
+						"itemsNum": 5,
+						"correctItems": "3;4;0;2;1",
+						"itemSize": 210
+					}
+				},
+				{
+					"id": 6,
+					"tmpl": "tmpl-rp-match",
+					"visible": true,
+					"order": 6,
+					"tmplParams": {
+						"backColor": "#626262",
+						"theme": "yellow",
+						"leftItems": 5,
+						"rightItems": 5,
+						"correctItems": "0:1,1:4,2:3,3:2,4:0",
+						"colLeftWidth": "30%",
+						"colCenterWidth": "10%",
+						"colRightWidth": "60%"
+					}
+				},
+				{
+					"id": 7,
+					"tmpl": "tmpl-rp-multiple",
+					"visible": true,
+					"order": 7,
+					"tmplParams": {
+						"backColor": "#626262",
+						"theme": "yellow",
+						"answers": [false, true, false, false]
+					}
+				},
+				{
+					"id": 8,
+					"tmpl": "tmpl-fullimages-sequence",
+					"visible": true,
+					"order": 8,
+					"tmplParams": {
+						"backColor": "linear-gradient(30deg, rgba(64,67,56,1) 0%, rgba(54,46,52,1) 100%)",
+						"theme": "yellow",
+						"images": [
+							{
+								"url": "illustrations/lisa1.jpg"
+							},
+							{
+								"url": "illustrations/lisa2.jpg"
+							},
+							{
+								"url": "illustrations/lisa3.jpg"
+							},
+							{
+								"url": "illustrations/lisa4.jpg"
+							}
+						]
+					}
+				},
+				{
+					"id": 9,
+					"tmpl": "tmpl-rp-multiple",
+					"visible": true,
+					"order": 9,
+					"tmplParams": {
+						"backColor": "#626262",
+						"theme": "yellow",
+						"answers": [false, true, false, false]
+					}
+				},
+				{
+					"id": 10,
+					"tmpl": "tmpl-rp-multiple",
+					"visible": true,
+					"order": 10,
+					"tmplParams": {
+						"backColor": "#626262",
+						"theme": "yellow",
+						"answers": [true, true, true, true]
+					}
+				},
+				{
+					"id": 11,
+					"tmpl": "tmpl-rp-match",
+					"visible": true,
+					"order": 11,
+					"tmplParams": {
+						"backColor": "#626262",
+						"theme": "brown",
+						"leftItems": 4,
+						"rightItems": 4,
+						"correctItems": "0:3,1:0,2:1,3:2",
+						"colLeftWidth": "60%",
+						"colCenterWidth": "10%",
+						"colRightWidth": "30%"
+					}
+				},
+				{
+					"id": 12,
+					"tmpl": "tmpl-rp-onechoice",
+					"visible": true,
+					"order": 12,
+					"tmplParams": {
+						"backColor": "#626262",
+						"theme": "brown",
+						"extraNote": true,
+						"answers": [
+							{
+								"order": 0,
+								"ico":"icons/3dico-megaphone.png"
+							},
+							{
+								"order": 1,
+								"ico":"icons/3dico-shield.png",
+								"correct": true
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+				"order": 1,
+				"pages": [
+					{
+						"id": 100,
+						"tmpl": "tmpl-modulestart",
+						"visible": true,
+						"order": 0,
+						"tmplParams": {
+							"backColor": "linear-gradient(30deg, rgba(60,51,37,1) 0%, rgba(27,24,10,1) 100%)",
+							"theme": "brown"
+						}
+					},
+					{
+						"id": 16,
+						"tmpl": "tmpl-objectives",
+						"visible": true,
+						"order": 1,
+						"tmplParams": {
+							"backColor": "fff",
+							"theme": "yellow",
+							"noteType": "question",
+							"messages": [{
+									"order": 0
+								},
+								{
+									"order": 1
+								},
+								{
+									"order": 2
+								}
+							]
+						}
+					},
+					{
+						"id": 17,
+						"tmpl": "tmpl-guessing-sequence",
+						"visible": true,
+						"order": 2,
+						"tmplParams": {
+							"backColor": "#FFF",
+							"theme": "yellow",
+							"extraNote": true,
+							"sliders": [
+								{
+									"min": 0,
+									"default": 1,
+									"max": 2,
+									"step": 1,
+									"correct": 2
+								},
+								{
+									"min": 0,
+									"default": 1,
+									"max": 2,
+									"step": 1,
+									"correct": 0
+								},
+								{
+									"min": 0,
+									"default": 1,
+									"max": 2,
+									"step": 1,
+									"correct": 0
+								},
+								{
+									"min": 0,
+									"default": 1,
+									"max": 2,
+									"step": 1,
+									"correct": 2
+								},
+								{
+									"min": 0,
+									"default": 1,
+									"max": 2,
+									"step": 1,
+									"correct": 0
+								},
+								{
+									"min": 0,
+									"default": 1,
+									"max": 2,
+									"step": 1,
+									"correct": 0
+								}
+							]
+						}
+					},
+					{
+							"id": 18,
+							"tmpl": "tmpl-video-presentation",
+							"visible": true,
+							"order": 3,
+							"tmplParams": {
+									"slides": [
+											{
+													"file": "presentations/m2_p1/Slide1.jpeg",
+													"order": 0,
+													"time": "00:00:00"
+											},
+											{
+													"file": "presentations/m2_p1/Slide2.jpeg",
+													"order": 1,
+													"time": "00:00:40"
+											},
+											{
+													"file": "presentations/m2_p1/Slide3.jpeg",
+													"order": 2,
+													"time": "00:01:15"
+											},
+											{
+													"file": "presentations/m2_p1/Slide4.jpeg",
+													"order": 3,
+													"time": "00:01:50"
+											},
+											{
+													"file": "presentations/m2_p1/Slide5.jpeg",
+													"order": 4,
+													"time": "00:02:50"
+											},
+											{
+													"file": "presentations/m2_p1/Slide6.jpeg",
+													"order": 5,
+													"time": "00:03:30"
+											}
+									],
+									"theme": "yellow",
+									"video_provider": "youtube",
+									"video_url": "a6FDq0hEGZs",
+									"backColor": "#3f3f3f"
+							}
+					},
+					{
+						"id": 19,
+						"tmpl": "tmpl-rp-multiple",
+						"visible": true,
+						"order": 4,
+						"tmplParams": {
+							"backColor": "#626262",
+							"theme": "yellow",
+							"answers": [false, true, false, false]
+						}
+					},
+					{
+						"id": 20,
+						"tmpl": "tmpl-rp-multiple",
+						"visible": true,
+						"order": 5,
+						"tmplParams": {
+							"backColor": "#626262",
+							"theme": "yellow",
+							"answers": [true, false, false, false]
+						}
+					},
+					{
+						"id": 21,
+						"tmpl": "tmpl-rp-multiple",
+						"visible": true,
+						"order": 6,
+						"tmplParams": {
+							"backColor": "#626262",
+							"theme": "yellow",
+							"answers": [false, false, true, false]
+						}
+					},
+					{
+						"id": 22,
+						"tmpl": "tmpl-rp-fillblank",
+						"visible": true,
+						"order": 7,
+						"tmplParams": {
+							"backColor": "#3f3f3f",
+							"theme": "yellow",
+							"noteType": "question",
+							"itemsNum": 6,
+							"correctItems": "1;0;3;5;2;4",
+							"itemSize": 210
+						}
+					},
+					{
+						"id": 23,
+						"tmpl": "tmpl-rp-match",
+						"visible": true,
+						"order": 8,
+						"tmplParams": {
+							"backColor": "#626262",
+							"theme": "brown",
+							"leftItems": 4,
+							"rightItems": 4,
+							"correctItems": "0:0,1:3,2:2,3:1",
+							"colLeftWidth": "25%",
+							"colCenterWidth": "10%",
+							"colRightWidth": "65%"
+						}
+					},
+					{
+						"id": 24,
+						"tmpl": "tmpl-fullimages-sequence",
+						"visible": true,
+						"order": 8,
+						"tmplParams": {
+							"backColor": "linear-gradient(30deg, rgba(64,67,56,1) 0%, rgba(54,46,52,1) 100%)",
+							"theme": "yellow",
+							"images": [
+								{
+									"url": "illustrations/ana1.jpg"
+								},
+								{
+									"url": "illustrations/ana2.jpg"
+								},
+								{
+									"url": "illustrations/ana3.jpg"
+								},
+								{
+									"url": "illustrations/ana4.jpg"
+								}
+							]
+						}
+					},
+					{
+						"id": 25,
+						"tmpl": "tmpl-rp-multiple",
+						"visible": true,
+						"order": 9,
+						"tmplParams": {
+							"backColor": "#626262",
+							"theme": "yellow",
+							"answers": [false, true, false, false]
+						}
+					},
+					{
+						"id": 26,
+						"tmpl": "tmpl-rp-multiple",
+						"visible": true,
+						"order": 10,
+						"tmplParams": {
+							"backColor": "#626262",
+							"theme": "yellow",
+							"answers": [false, true, false, false]
+						}
+					},
+					{
+						"id": 27,
+						"tmpl": "tmpl-rp-match",
+						"visible": true,
+						"order": 11,
+						"tmplParams": {
+							"backColor": "#626262",
+							"theme": "brown",
+							"leftItems": 4,
+							"rightItems": 4,
+							"correctItems": "0:2,1:1,2:0,3:3",
+							"colLeftWidth": "45%",
+							"colCenterWidth": "10%",
+							"colRightWidth": "45%"
+						}
+					},
+					{
+						"id": 28,
+						"tmpl": "tmpl-rp-onechoice",
+						"visible": true,
+						"order": 12,
+						"tmplParams": {
+							"backColor": "#626262",
+							"theme": "brown",
+							"extraNote": true,
+							"answers": [
+								{
+									"order": 0,
+									"ico":"icons/ico-gavel.png"
+								},
+								{
+									"order": 1,
+									"ico":"icons/ico-help.png",
+									"correct": true
+								}
+							]
+						}
+					}
+				]
+		 },
+		 {
+				 "order": 2,
+				 "pages": [
+					 {
+ 						"id": 101,
+ 						"tmpl": "tmpl-modulestart",
+ 						"visible": true,
+ 						"order": 0,
+ 						"tmplParams": {
+ 							"backColor": "linear-gradient(30deg, rgba(60,51,37,1) 0%, rgba(27,24,10,1) 100%)",
+ 							"theme": "brown"
+ 						}
+ 					},
+					{
+						"id": 34,
+						"tmpl": "tmpl-objectives",
+						"visible": true,
+						"order": 1,
+						"tmplParams": {
+							"backColor": "fff",
+							"theme": "yellow",
+							"noteType": "question",
+							"messages": [{
+									"order": 0
+								},
+								{
+									"order": 1
+								},
+								{
+									"order": 2
+								},
+								{
+									"order": 3
+								}
+							]
+						}
+					},
+					{
+						"id": 35,
+						"tmpl": "tmpl-guessing-sequence",
+						"visible": true,
+						"order": 2,
+						"tmplParams": {
+							"backColor": "#FFF",
+							"theme": "yellow",
+							"extraNote": true,
+							"sliders": [
+								{
+									"min": 0,
+									"default": 1,
+									"max": 2,
+									"step": 1,
+									"correct": 0
+								},
+								{
+									"min": 0,
+									"default": 1,
+									"max": 2,
+									"step": 1,
+									"correct": 2
+								},
+								{
+									"min": 0,
+									"default": 1,
+									"max": 2,
+									"step": 1,
+									"correct": 0
+								},
+								{
+									"min": 0,
+									"default": 1,
+									"max": 2,
+									"step": 1,
+									"correct": 2
+								},
+								{
+									"min": 0,
+									"default": 1,
+									"max": 2,
+									"step": 1,
+									"correct": 2
+								},
+								{
+									"min": 0,
+									"default": 1,
+									"max": 2,
+									"step": 1,
+									"correct": 0
+								}
+							]
+						}
+					},
+					{
+							"id": 36,
+							"tmpl": "tmpl-video-presentation",
+							"visible": true,
+							"order": 3,
+							"tmplParams": {
+									"slides": [
+											{
+													"file": "presentations/m3_p1/Slide1.jpeg",
+													"order": 0,
+													"time": "00:00:00"
+											},
+											{
+													"file": "presentations/m3_p1/Slide2.jpeg",
+													"order": 1,
+													"time": "00:00:55"
+											},
+											{
+													"file": "presentations/m3_p1/Slide3.jpeg",
+													"order": 2,
+													"time": "00:02:50"
+											},
+											{
+													"file": "presentations/m3_p1/Slide4.jpeg",
+													"order": 3,
+													"time": "00:05:08"
+											},
+											{
+													"file": "presentations/m3_p1/Slide5.jpeg",
+													"order": 4,
+													"time": "00:06:20"
+											},
+											{
+													"file": "presentations/m3_p1/Slide6.jpeg",
+													"order": 5,
+													"time": "00:07:11"
+											}
+									],
+									"theme": "yellow",
+									"video_provider": "youtube",
+									"video_url": "1qkywW-n9GA",
+									"backColor": "#3f3f3f"
+							}
+					},
+					{
+						"id": 37,
+						"tmpl": "tmpl-rp-multiple",
+						"visible": true,
+						"order": 4,
+						"tmplParams": {
+							"backColor": "#626262",
+							"theme": "yellow",
+							"answers": [false, true, false, false]
+						}
+					},
+					{
+						"id": 38,
+						"tmpl": "tmpl-rp-multiple",
+						"visible": true,
+						"order": 5,
+						"tmplParams": {
+							"backColor": "#626262",
+							"theme": "yellow",
+							"answers": [false, true, false, false]
+						}
+					},
+					{
+						"id": 39,
+						"tmpl": "tmpl-rp-multiple",
+						"visible": true,
+						"order": 6,
+						"tmplParams": {
+							"backColor": "#626262",
+							"theme": "yellow",
+							"answers": [false, false, true, false]
+						}
+					},
+					{
+						"id": 40,
+						"tmpl": "tmpl-rp-fillblank",
+						"visible": true,
+						"order": 7,
+						"tmplParams": {
+							"backColor": "#3f3f3f",
+							"theme": "yellow",
+							"noteType": "question",
+							"itemsNum": 6,
+							"correctItems": "5;0;3;1;4;2",
+							"itemSize": 180
+						}
+					},
+					{
+						"id": 41,
+						"tmpl": "tmpl-rp-match",
+						"visible": true,
+						"order": 8,
+						"tmplParams": {
+							"backColor": "#626262",
+							"theme": "brown",
+							"leftItems": 4,
+							"rightItems": 4,
+							"correctItems": "0:0,1:3,2:1,3:2",
+							"colLeftWidth": "35%",
+							"colCenterWidth": "10%",
+							"colRightWidth": "55%"
+						}
+					},
+					{
+						"id": 42,
+						"tmpl": "tmpl-fullimages-sequence",
+						"visible": true,
+						"order": 8,
+						"tmplParams": {
+							"backColor": "linear-gradient(30deg, rgba(64,67,56,1) 0%, rgba(54,46,52,1) 100%)",
+							"theme": "yellow",
+							"images": [
+								{
+									"url": "illustrations/marina1.jpg"
+								},
+								{
+									"url": "illustrations/marina2.jpg"
+								},
+								{
+									"url": "illustrations/marina3.jpg"
+								},
+								{
+									"url": "illustrations/marina4.jpg"
+								},
+								{
+									"url": "illustrations/marina5.jpg"
+								}
+							]
+						}
+					},
+					{
+						"id": 43,
+						"tmpl": "tmpl-rp-multiple",
+						"visible": true,
+						"order": 9,
+						"tmplParams": {
+							"backColor": "#626262",
+							"theme": "yellow",
+							"answers": [true, false, true, false]
+						}
+					},
+					{
+						"id": 44,
+						"tmpl": "tmpl-rp-multiple",
+						"visible": true,
+						"order": 10,
+						"tmplParams": {
+							"backColor": "#626262",
+							"theme": "yellow",
+							"answers": [true, true, false, true]
+						}
+					},
+					{
+						"id": 45,
+						"tmpl": "tmpl-rp-multiple",
+						"visible": true,
+						"order": 11,
+						"tmplParams": {
+							"backColor": "#626262",
+							"theme": "yellow",
+							"answers": [true, true, false, false]
+						}
+					},
+					{
+						"id": 46,
+						"tmpl": "tmpl-rp-match",
+						"visible": true,
+						"order": 12,
+						"tmplParams": {
+							"backColor": "#626262",
+							"theme": "brown",
+							"leftItems": 4,
+							"rightItems": 4,
+							"correctItems": "0:3,1:1,2:0,3:2",
+							"colLeftWidth": "45%",
+							"colCenterWidth": "10%",
+							"colRightWidth": "45%"
+						}
+					},
+					{
+						"id": 47,
+						"tmpl": "tmpl-rp-onechoice",
+						"visible": true,
+						"order": 13,
+						"tmplParams": {
+							"backColor": "#626262",
+							"theme": "brown",
+							"extraNote": true,
+							"answers": [
+								{
+									"order": 0,
+									"ico":"icons/3dico-megaphone.png"
+								},
+								{
+									"order": 1,
+									"ico":"icons/3dico-shield.png",
+									"correct": true
+								}
+							]
+						}
+					}
+				]
+			},
+			{
+					"order": 3,
+					"pages": [
+						{
+								"id": 102,
+								"tmpl": "tmpl-modulestart",
+		 						"visible": true,
+		 						"order": 0,
+		 						"tmplParams": {
+		 							"backColor": "linear-gradient(30deg, rgba(60,51,37,1) 0%, rgba(27,24,10,1) 100%)",
+		 							"theme": "brown"
+		 						}
+						 },
+						 {
+	 						"id": 55,
+	 						"tmpl": "tmpl-objectives",
+	 						"visible": true,
+	 						"order": 1,
+	 						"tmplParams": {
+	 							"backColor": "fff",
+	 							"theme": "yellow",
+	 							"noteType": "question",
+	 							"messages": [
+									{
+	 									"order": 0
+	 								},
+	 								{
+	 									"order": 1
+	 								},
+	 								{
+	 									"order": 2
+	 								},
+	 								{
+	 									"order": 3
+	 								},
+									{
+										"order": 4
+									},
+									{
+										"order": 5
+									},
+									{
+										"order": 6
+									}
+	 							]
+	 						}
+	 					},
+	 					{
+	 						"id": 56,
+	 						"tmpl": "tmpl-guessing-sequence",
+	 						"visible": true,
+	 						"order": 2,
+	 						"tmplParams": {
+	 							"backColor": "#FFF",
+	 							"theme": "yellow",
+	 							"extraNote": true,
+	 							"sliders": [
+	 								{
+	 									"min": 0,
+	 									"default": 1,
+	 									"max": 2,
+	 									"step": 1,
+	 									"correct": 2
+	 								},
+	 								{
+	 									"min": 0,
+	 									"default": 1,
+	 									"max": 2,
+	 									"step": 1,
+	 									"correct": 2
+	 								},
+	 								{
+	 									"min": 0,
+	 									"default": 1,
+	 									"max": 2,
+	 									"step": 1,
+	 									"correct": 0
+	 								},
+	 								{
+	 									"min": 0,
+	 									"default": 1,
+	 									"max": 2,
+	 									"step": 1,
+	 									"correct": 2
+	 								},
+	 								{
+	 									"min": 0,
+	 									"default": 1,
+	 									"max": 2,
+	 									"step": 1,
+	 									"correct": 0
+	 								},
+	 								{
+	 									"min": 0,
+	 									"default": 1,
+	 									"max": 2,
+	 									"step": 1,
+	 									"correct": 0
+	 								}
+	 							]
+	 						}
+	 					},
+	 					{
+	 							"id": 57,
+	 							"tmpl": "tmpl-video-presentation",
+	 							"visible": true,
+	 							"order": 3,
+	 							"tmplParams": {
+	 									"slides": [
+	 											{
+	 													"file": "presentations/m4_p1/Slide1.jpeg",
+	 													"order": 0,
+	 													"time": "00:00:00"
+	 											},
+	 											{
+	 													"file": "presentations/m4_p1/Slide2.jpeg",
+	 													"order": 1,
+	 													"time": "00:00:06"
+	 											},
+	 											{
+	 													"file": "presentations/m4_p1/Slide3.jpeg",
+	 													"order": 2,
+	 													"time": "00:00:32"
+	 											},
+	 											{
+	 													"file": "presentations/m4_p1/Slide4.jpeg",
+	 													"order": 3,
+	 													"time": "00:00:51"
+	 											},
+	 											{
+	 													"file": "presentations/m4_p1/Slide5.jpeg",
+	 													"order": 4,
+	 													"time": "00:01:12"
+	 											},
+	 											{
+	 													"file": "presentations/m4_p1/Slide6.jpeg",
+	 													"order": 5,
+	 													"time": "00:01:57"
+	 											},
+												{
+														"file": "presentations/m4_p1/Slide7.jpeg",
+														"order": 6,
+														"time": "00:02:42"
+												}
+	 									],
+	 									"theme": "yellow",
+	 									"video_provider": "youtube",
+	 									"video_url": "xW9jmOpS0ro",
+	 									"backColor": "#3f3f3f"
+	 							}
+	 					},
+	 					{
+	 						"id": 58,
+	 						"tmpl": "tmpl-rp-multiple",
+	 						"visible": true,
+	 						"order": 4,
+	 						"tmplParams": {
+	 							"backColor": "#626262",
+	 							"theme": "yellow",
+	 							"answers": [false, true, false, false]
+	 						}
+	 					},
+	 					{
+	 						"id": 59,
+	 						"tmpl": "tmpl-rp-multiple",
+	 						"visible": true,
+	 						"order": 5,
+	 						"tmplParams": {
+	 							"backColor": "#626262",
+	 							"theme": "yellow",
+	 							"answers": [false, false, true, false]
+	 						}
+	 					},
+	 					{
+	 						"id": 60,
+	 						"tmpl": "tmpl-rp-multiple",
+	 						"visible": true,
+	 						"order": 6,
+	 						"tmplParams": {
+	 							"backColor": "#626262",
+	 							"theme": "yellow",
+	 							"answers": [false, false, true, false]
+	 						}
+	 					},
+	 					{
+	 						"id": 61,
+	 						"tmpl": "tmpl-rp-fillblank",
+	 						"visible": true,
+	 						"order": 7,
+	 						"tmplParams": {
+	 							"backColor": "#3f3f3f",
+	 							"theme": "yellow",
+	 							"noteType": "question",
+	 							"itemsNum": 5,
+	 							"correctItems": "0;3;1;4;2",
+	 							"itemSize": 180
+	 						}
+	 					},
+	 					{
+	 						"id": 62,
+	 						"tmpl": "tmpl-rp-match",
+	 						"visible": true,
+	 						"order": 8,
+	 						"tmplParams": {
+	 							"backColor": "#626262",
+	 							"theme": "brown",
+	 							"leftItems": 5,
+	 							"rightItems": 5,
+	 							"correctItems": "0:3,1:1,2:2,3:0,4:4",
+	 							"colLeftWidth": "40%",
+	 							"colCenterWidth": "10%",
+	 							"colRightWidth": "50%"
+	 						}
+	 					},
+						{
+	 						"id": 63,
+	 						"tmpl": "tmpl-guessing-sequence",
+	 						"visible": true,
+	 						"order": 9,
+	 						"tmplParams": {
+	 							"backColor": "#FFF",
+	 							"theme": "yellow",
+	 							"extraNote": true,
+	 							"sliders": [
+	 								{
+	 									"min": 0,
+	 									"default": 1,
+	 									"max": 2,
+	 									"step": 1,
+	 									"correct": 2
+	 								},
+	 								{
+	 									"min": 0,
+	 									"default": 1,
+	 									"max": 2,
+	 									"step": 1,
+	 									"correct": 0
+	 								},
+	 								{
+	 									"min": 0,
+	 									"default": 1,
+	 									"max": 2,
+	 									"step": 1,
+	 									"correct": 0
+	 								},
+	 								{
+	 									"min": 0,
+	 									"default": 1,
+	 									"max": 2,
+	 									"step": 1,
+	 									"correct": 0
+	 								},
+	 								{
+	 									"min": 0,
+	 									"default": 1,
+	 									"max": 2,
+	 									"step": 1,
+	 									"correct": 2
+	 								}
+	 							]
+	 						}
+	 					},
+	 					{
+	 							"id": 64,
+	 							"tmpl": "tmpl-video-presentation",
+	 							"visible": true,
+	 							"order": 10,
+	 							"tmplParams": {
+	 									"slides": [
+	 											{
+	 													"file": "presentations/m4_p2/Slide1.jpeg",
+	 													"order": 0,
+	 													"time": "00:00:00"
+	 											},
+	 											{
+	 													"file": "presentations/m4_p2/Slide2.jpeg",
+	 													"order": 1,
+	 													"time": "00:00:30"
+	 											},
+	 											{
+	 													"file": "presentations/m4_p2/Slide3.jpeg",
+	 													"order": 2,
+	 													"time": "00:01:40"
+	 											},
+	 											{
+	 													"file": "presentations/m4_p2/Slide4.jpeg",
+	 													"order": 3,
+	 													"time": "00:02:15"
+	 											},
+	 											{
+	 													"file": "presentations/m4_p2/Slide5.jpeg",
+	 													"order": 4,
+	 													"time": "00:02:45"
+	 											},
+	 											{
+	 													"file": "presentations/m4_p2/Slide6.jpeg",
+	 													"order": 5,
+	 													"time": "00:04:17"
+	 											}
+	 									],
+	 									"theme": "yellow",
+	 									"video_provider": "youtube",
+	 									"video_url": "Nze3HDXmrD0",
+	 									"backColor": "#3f3f3f"
+	 							}
+	 					},
+	 					{
+	 						"id": 65,
+	 						"tmpl": "tmpl-rp-multiple",
+	 						"visible": true,
+	 						"order": 11,
+	 						"tmplParams": {
+	 							"backColor": "#626262",
+	 							"theme": "yellow",
+	 							"answers": [false, true, false, false]
+	 						}
+	 					},
+	 					{
+	 						"id": 66,
+	 						"tmpl": "tmpl-rp-multiple",
+	 						"visible": true,
+	 						"order": 12,
+	 						"tmplParams": {
+	 							"backColor": "#626262",
+	 							"theme": "yellow",
+	 							"answers": [false, true, false, false]
+	 						}
+	 					},
+	 					{
+	 						"id": 67,
+	 						"tmpl": "tmpl-rp-multiple",
+	 						"visible": true,
+	 						"order": 13,
+	 						"tmplParams": {
+	 							"backColor": "#626262",
+	 							"theme": "yellow",
+	 							"answers": [true, false, false, false]
+	 						}
+	 					},
+	 					{
+	 						"id": 68,
+	 						"tmpl": "tmpl-rp-fillblank",
+	 						"visible": true,
+	 						"order": 14,
+	 						"tmplParams": {
+	 							"backColor": "#3f3f3f",
+	 							"theme": "yellow",
+	 							"noteType": "question",
+	 							"itemsNum": 5,
+	 							"correctItems": "2;3;4;0;1",
+	 							"itemSize": 160
+	 						}
+	 					},
+	 					{
+	 						"id": 69,
+	 						"tmpl": "tmpl-rp-match",
+	 						"visible": true,
+	 						"order": 15,
+	 						"tmplParams": {
+	 							"backColor": "#626262",
+	 							"theme": "brown",
+	 							"leftItems": 6,
+	 							"rightItems": 3,
+	 							"correctItems": "0:2,1:0,1:1,2:2,3:0,4:1,5:1",
+	 							"colLeftWidth": "55%",
+	 							"colCenterWidth": "10%",
+	 							"colRightWidth": "35%"
+	 						}
+	 					},
+						{
+							"id": 70,
+							"tmpl": "tmpl-guessing-sequence",
+							"visible": true,
+							"order": 16,
+							"tmplParams": {
+								"backColor": "#FFF",
+								"theme": "yellow",
+								"extraNote": true,
+								"sliders": [
+									{
+										"min": 0,
+										"default": 1,
+										"max": 2,
+										"step": 1,
+										"correct": 2
+									},
+									{
+										"min": 0,
+										"default": 1,
+										"max": 2,
+										"step": 1,
+										"correct": 0
+									},
+									{
+										"min": 0,
+										"default": 1,
+										"max": 2,
+										"step": 1,
+										"correct": 2
+									},
+									{
+										"min": 0,
+										"default": 1,
+										"max": 2,
+										"step": 1,
+										"correct": 0
+									},
+									{
+										"min": 0,
+										"default": 1,
+										"max": 2,
+										"step": 1,
+										"correct": 0
+									}
+								]
+							}
+						},
+						{
+								"id": 71,
+								"tmpl": "tmpl-video-presentation",
+								"visible": true,
+								"order": 17,
+								"tmplParams": {
+										"slides": [
+												{
+														"file": "presentations/m4_p3/Slide1.jpeg",
+														"order": 0,
+														"time": "00:00:00"
+												},
+												{
+														"file": "presentations/m4_p3/Slide2.jpeg",
+														"order": 1,
+														"time": "00:00:12"
+												},
+												{
+														"file": "presentations/m4_p3/Slide3.jpeg",
+														"order": 2,
+														"time": "00:00:53"
+												},
+												{
+														"file": "presentations/m4_p3/Slide7.jpeg",
+														"order": 3,
+														"time": "00:01:30"
+												},
+												{
+														"file": "presentations/m4_p3/Slide4.jpeg",
+														"order": 4,
+														"time": "00:01:58"
+												},
+												{
+														"file": "presentations/m4_p3/Slide5.jpeg",
+														"order": 5,
+														"time": "00:02:45"
+												},
+												{
+														"file": "presentations/m4_p3/Slide6.jpeg",
+														"order": 6,
+														"time": "00:03:40"
+												},
+												{
+														"file": "presentations/m4_p3/Slide8.jpeg",
+														"order": 7,
+														"time": "00:04:50"
+												}
+										],
+										"theme": "yellow",
+										"video_provider": "youtube",
+										"video_url": "wzGO9lmmPVU",
+										"backColor": "#3f3f3f"
+								}
+						},
+						{
+							"id": 72,
+							"tmpl": "tmpl-rp-multiple",
+							"visible": true,
+							"order": 18,
+							"tmplParams": {
+								"backColor": "#626262",
+								"theme": "yellow",
+								"answers": [false, true, false, false]
+							}
+						},
+						{
+							"id": 73,
+							"tmpl": "tmpl-rp-multiple",
+							"visible": true,
+							"order": 19,
+							"tmplParams": {
+								"backColor": "#626262",
+								"theme": "yellow",
+								"answers": [false, false, true, false]
+							}
+						},
+						{
+							"id": 74,
+							"tmpl": "tmpl-rp-multiple",
+							"visible": true,
+							"order": 20,
+							"tmplParams": {
+								"backColor": "#626262",
+								"theme": "yellow",
+								"answers": [false, true, false, false]
+							}
+						},
+						{
+							"id": 75,
+							"tmpl": "tmpl-rp-fillblank",
+							"visible": true,
+							"order": 21,
+							"tmplParams": {
+								"backColor": "#3f3f3f",
+								"theme": "yellow",
+								"noteType": "question",
+								"itemsNum": 5,
+								"correctItems": "4;3;2;0;1",
+								"itemSize": 160
+							}
+						},
+						{
+							"id": 76,
+							"tmpl": "tmpl-rp-match",
+							"visible": true,
+							"order": 22,
+							"tmplParams": {
+								"backColor": "#626262",
+								"theme": "brown",
+								"leftItems": 4,
+								"rightItems": 4,
+								"correctItems": "0:3,1:2,2:0,3:1",
+								"colLeftWidth": "50%",
+								"colCenterWidth": "10%",
+								"colRightWidth": "40%"
+							}
+						},
+						{
+							"id": 77,
+							"tmpl": "tmpl-chat3",
+							"visible": true,
+							"order": 23,
+							"tmplParams": {
+								"backColor": "linear-gradient(-120deg, rgba(70,87,102,1) 0%, rgba(30,55,70,1) 100%)",
+								"theme": "green",
+								"arrowAppearDelay": 7,
+								"introSegment": [0,390],
+								"loopSegment": [389,390],
+								"reference": "illustrations/interview-full.jpg",
+								"disableText": "End",
+								"convo": [
+											{ "sender": "Interveiwer", "type": "answer", "text": "I would be interested in learning more about you. Would you like to tell me how you spend your day? Tell me as much as you can from beginning to end. Try not to miss a thing.", "avatar": "../files/illustrations/interview-expert.jpg" },
+											{ "sender": "Lisa", "avatar": "../files/illustrations/interview-kid.jpg", "type": "question", "text": "I go to the third grade and I also play good football..." },
+											{ "sender": "Inrterviewer", "avatar": "../files/illustrations/interview-expert.jpg", "type": "answer", "text": "*nods their head reinforcing*" },
+											{ "sender": "Lisa", "avatar": "../files/illustrations/interview-kid.jpg", "type": "question", "text": "we went on a school trip, by bus. It was perfect... " },
+											{ "sender": "Inrterviewer", "avatar": "../files/illustrations/interview-expert.jpg", "type": "answer", "text": "I would be very interested if you could tell me everything about the excursion. Try to tell me every detail, from the beginning to the end." },
+											{ "sender": "Lisa", "type": "question", "text": "First the teacher told us to stand in a line to get on the bus. My friends and I sat in the back of the bus all together. Then we went to an ancient castle- it was a bit boring – another lady spoke to us there about the ancient history. But then the teacher told us, because you were good kids, she is going to take us to the nicest playground. It was great! We played and we ate ice cream. ", "avatar": "../files/illustrations/interview-kid.jpg" },
+											{ "sender": "Interveiwer", "type": "answer", "text": "You said you went to a playground. Can you tell me more about it?", "avatar": "../files/illustrations/interview-expert.jpg" },
+											{ "sender": "Lisa", "type": "question", "text": "He had lots of toys, a wheel and a big round thing that you talk to and they hear you on the other side. Only at the swings it was not nice because Maria fell and hit her knee.", "avatar": "../files/illustrations/interview-kid.jpg" },
+											{ "sender": "Interveiwer", "avatar": "../files/illustrations/interview-expert.jpg", "type": "answer", "text": "* Silence*" },
+											{ "sender": "Lisa", "avatar": "../files/illustrations/interview-kid.jpg", "type": "question", "text": "She swing high up and then jumped and fell down. I saw her first and told the teacher and Stefanos mom. She was bleeding and they put a Band-Aid on her. Then none of us had to go to the swings." },
+											{ "sender": "Interveiwer", "avatar": "../files/illustrations/interview-expert.jpg", "type": "answer", "text": "And then what happened. Remember, I wasn't there, I don't know what happened." },
+											{ "sender": "Lisa", "avatar": "../files/illustrations/interview-kid.jpg", "type": "question", "text": "Then we sat on the grass and ate ice cream. Then the bus came, and we went back." }
+									]
+							}
+						}
+					]
+			 },
+			 {
+				 "order": 4,
+				 "pages": [
+					 {
+							 "id": 103,
+							 "tmpl": "tmpl-modulestart",
+	  						"visible": true,
+	  						"order": 0,
+	  						"tmplParams": {
+	  							"backColor": "linear-gradient(30deg, rgba(60,51,37,1) 0%, rgba(27,24,10,1) 100%)",
+	  							"theme": "brown"
+	  						}
+						},
+						{
+							"id": 90,
+							"tmpl": "tmpl-objectives",
+							"visible": true,
+							"order": 1,
+							"tmplParams": {
+								"backColor": "fff",
+								"theme": "yellow",
+								"noteType": "question",
+								"messages": [{
+										"order": 0
+									},
+									{
+										"order": 1
+									},
+									{
+										"order": 2
+									}
+								]
+							}
+						},
+						{
+							"id": 91,
+							"tmpl": "tmpl-guessing-sequence",
+							"visible": true,
+							"order": 2,
+							"tmplParams": {
+								"backColor": "#FFF",
+								"theme": "yellow",
+								"extraNote": true,
+								"sliders": [
+									{
+										"min": 0,
+										"default": 1,
+										"max": 2,
+										"step": 1,
+										"correct": 2
+									},
+									{
+										"min": 0,
+										"default": 1,
+										"max": 2,
+										"step": 1,
+										"correct": 0
+									},
+									{
+										"min": 0,
+										"default": 1,
+										"max": 2,
+										"step": 1,
+										"correct": 2
+									},
+									{
+										"min": 0,
+										"default": 1,
+										"max": 2,
+										"step": 1,
+										"correct": 0
+									},
+									{
+										"min": 0,
+										"default": 1,
+										"max": 2,
+										"step": 1,
+										"correct": 0
+									}
+								]
+							}
+						},
+						{
+								"id": 92,
+								"tmpl": "tmpl-video-presentation",
+								"visible": true,
+								"order": 3,
+								"tmplParams": {
+										"slides": [
+												{
+														"file": "presentations/m5_p1/Slide1.jpeg",
+														"order": 0,
+														"time": "00:00:15"
+												},
+												{
+														"file": "presentations/m5_p1/Slide2.jpeg",
+														"order": 1,
+														"time": "00:00:55"
+												},
+												{
+														"file": "presentations/m5_p1/Slide3.jpeg",
+														"order": 2,
+														"time": "00:01:33"
+												},
+												{
+														"file": "presentations/m5_p1/Slide5.jpeg",
+														"order": 3,
+														"time": "00:01:54"
+												},
+												{
+														"file": "presentations/m5_p1/Slide6.jpeg",
+														"order": 4,
+														"time": "00:02:20"
+												},
+												{
+														"file": "presentations/m5_p1/Slide4.jpeg",
+														"order": 5,
+														"time": "00:03:15"
+												},
+												{
+														"file": "presentations/m5_p1/Slide7.jpeg",
+														"order": 6,
+														"time": "00:03:41"
+												}
+										],
+										"theme": "yellow",
+										"video_provider": "youtube",
+										"video_url": "zVFps5iPPKY",
+										"backColor": "#3f3f3f"
+								}
+						},
+						{
+							"id": 93,
+							"tmpl": "tmpl-rp-multiple",
+							"visible": true,
+							"order": 4,
+							"tmplParams": {
+								"backColor": "#626262",
+								"theme": "yellow",
+								"answers": [false, true, false, false]
+							}
+						},
+						{
+							"id": 94,
+							"tmpl": "tmpl-rp-multiple",
+							"visible": true,
+							"order": 5,
+							"tmplParams": {
+								"backColor": "#626262",
+								"theme": "yellow",
+								"answers": [false, false, true, false]
+							}
+						},
+						{
+							"id": 95,
+							"tmpl": "tmpl-rp-multiple",
+							"visible": true,
+							"order": 6,
+							"tmplParams": {
+								"backColor": "#626262",
+								"theme": "yellow",
+								"answers": [false, true, false, false]
+							}
+						},
+						{
+							"id": 96,
+							"tmpl": "tmpl-rp-fillblank",
+							"visible": true,
+							"order": 7,
+							"tmplParams": {
+								"backColor": "#3f3f3f",
+								"theme": "yellow",
+								"noteType": "question",
+								"itemsNum": 5,
+								"correctItems": "2;0;1;4;3",
+								"itemSize": 160
+							}
+						},
+						{
+							"id": 97,
+							"tmpl": "tmpl-rp-match",
+							"visible": true,
+							"order": 8,
+							"tmplParams": {
+								"backColor": "#626262",
+								"theme": "brown",
+								"leftItems": 4,
+								"rightItems": 4,
+								"correctItems": "0:1,1:2,2:3,3:0",
+								"colLeftWidth": "35%",
+								"colCenterWidth": "10%",
+								"colRightWidth": "55%"
+							}
+						},
+						{
+							"id": 98,
+							"tmpl": "tmpl-fullimages-sequence",
+							"visible": true,
+							"order": 8,
+							"tmplParams": {
+								"backColor": "linear-gradient(30deg, rgba(64,67,56,1) 0%, rgba(54,46,52,1) 100%)",
+								"theme": "yellow",
+								"images": [
+									{
+										"url": "illustrations/felix1.jpg"
+									},
+									{
+										"url": "illustrations/felix2.jpg"
+									},
+									{
+										"url": "illustrations/felix3.jpg"
+									},
+									{
+										"url": "illustrations/felix4.jpg"
+									}
+								]
+							}
+						},
+						{
+							"id": 99,
+							"tmpl": "tmpl-rp-multiple",
+							"visible": true,
+							"order": 9,
+							"tmplParams": {
+								"backColor": "#626262",
+								"theme": "yellow",
+								"answers": [false, false, false, true]
+							}
+						},
+						{
+							"id": 201,
+							"tmpl": "tmpl-rp-multiple",
+							"visible": true,
+							"order": 10,
+							"tmplParams": {
+								"backColor": "#626262",
+								"theme": "yellow",
+								"answers": [false, true, false, false]
+							}
+						},
+						{
+							"id": 202,
+							"tmpl": "tmpl-rp-multiple",
+							"visible": true,
+							"order": 11,
+							"tmplParams": {
+								"backColor": "#626262",
+								"theme": "yellow",
+								"answers": [false, false, true, false]
+							}
+						},
+						{
+							"id": 203,
+							"tmpl": "tmpl-rp-match",
+							"visible": true,
+							"order": 12,
+							"tmplParams": {
+								"backColor": "#626262",
+								"theme": "yellow",
+								"leftItems": 4,
+								"rightItems": 4,
+								"correctItems": "0:1,1:3,2:0,3:2",
+								"colLeftWidth": "45%",
+								"colCenterWidth": "10%",
+								"colRightWidth": "45%"
+							}
+						},
+					 {
+						"id": 104,
+						"tmpl": "tmpl-examinfo",
+						"visible": true,
+						"order": 11,
+						"tmplParams": {
+							"backColor": "linear-gradient(30deg, rgba(64,67,56,1) 0%, rgba(54,46,52,1) 100%)",
+							"theme": "yellow"
+						}
+					}
+			  ]
+		 }
+	]
+}

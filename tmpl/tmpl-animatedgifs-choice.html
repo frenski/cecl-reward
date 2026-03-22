@@ -1,0 +1,107 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9" lang=""> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10" lang=""> <![endif]-->
+<!--[if gt IE 9><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+				
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../css/normalize.min.css">
+		<link rel="stylesheet" href="css/main-tmpl.css">
+		
+		<!-- Template specific css -->
+		<link rel="stylesheet" href="css/vendor/jquery.nouislider.css" />
+		<!-- End of template specific css -->
+
+        <script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+
+    <body>
+	
+		<div class="loading-container">
+		    <div class="loading-circle"></div>
+		</div>
+
+		
+		<!-- Template specific html -->
+		
+		<article>
+			<section class="width100per relative margin-bottom20">
+				<h1 class="title-page margin-top20 margin-bottom20 width90per centered pagetheme-text-lightcolour text-center">
+					<span class="edit-text" id="content_text0"></span>
+				</h1>
+				<p id="description" class="margin-top20 margin-bottom20 width90per centered pagetheme-text-lightcolour text-line-shrinked">
+					<span class="edit-text" id="content_text1"></span>
+				</p>
+		    </section>
+			<div class="height20"></div>
+			<section id="interact-wrapper" class="width320 clearfix centered margin-top20">
+				<div id="bullets-wrapper" class="pagetheme-text-lightcolour width10 float margin-right10 margin-top20 relative">
+					&nbsp;
+					<script type="application/mustache" id="tmpl-bullets">
+						<div class="absolute height20 margin-top-10" style="left:0; top:{{posY}}px;">{{bullet}}</div>
+						<div class="absolute height25 width25 background-black-transparent03 circle margin-top-10" style="right:-40px; top:{{posY}}px;"></div>
+					</script>
+				</div>
+				<div class="width30 float margin-right10 margin-left10 margin-top20">
+					<div id="slider-control" class="height210 noUi-transparent"></div>
+				</div>
+				<div id="anim-wrapper" class="width240 float relative">
+				 	<script type="application/mustache" id="tmpl-gifs">
+						<div id="gif{{order}}" style="width:{{width}}px; height:{{height}}px; background-image:url('../files/{{img}}.gif'); background-repeat:no-repeat; top: 0; left:0; display: none;" class="gif background-size-100per absolute"></div>
+					</script>
+				</div>
+			</section>
+			<section id="description-wrapper" class="relative margin-top30">
+				 <script type="application/mustache" id="tmpl-descriptions">
+					<div id="description{{order}}" class="description background-white-transparent09 padding20-h padding5-v width90per centered" style="display:none;">
+						<h2 class="title-secondary pagetheme-text-colour">
+							<span class="edit-text" id="content_text10{{order}}"></span>
+						</h2>
+						<p>
+							<span class="edit-text" id="content_text20{{order}}"></span>
+						</p>
+					</div>
+				</script>
+			</section>
+		</article>
+		
+		<div class="height200">&nbsp;</div>
+		
+		<!-- End of template specific html -->
+		
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+		<script src="js/vendor/jquery.jeditable.min.js"></script>
+		
+		<script src="js/config-tmpl.js"></script>
+		<script src="js/lib/ylearn-tmpl.js"></script>
+		<script src="js/main-tmpl.js"></script>
+		
+		<!-- Template specific scripts -->
+		<script src="js/vendor/jquery.nouislider.all.min.js"></script>
+		<script src="js/vendor/mustache.js"></script>
+		<script src="js/tmpl/tmpl-animatedgifs-choice.js"></script>
+		<!-- End of template specific scripts -->
+		
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+
+</html>
+

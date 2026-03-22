@@ -1,0 +1,360 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9" lang=""> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10" lang=""> <![endif]-->
+<!--[if gt IE 9><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic' rel='stylesheet' type='text/css'>
+		    <link href='https://fonts.googleapis.com/css?family=Quicksand:700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../css/normalize.min.css">
+		    <link rel="stylesheet" href="css/main-tmpl.css">
+
+    		<!-- Template specific css -->
+    		<link rel="stylesheet" href="css/vendor/bee3D.css" />
+    		<!-- End of template specific css -->
+
+        <script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+        <style>
+
+        #items-wrapper {
+          z-index: 10;
+        }
+
+        .poster-main .poster-list {
+          width: 60vw;
+          height: 25vw;
+        }
+
+        .icon {
+          margin-right: -6%;
+          margin-top: -0.5vw;
+          width: 6vw;
+          height: 6vw;
+          opacity: 0;
+          transform: rotate(0deg) scale(0.1);
+          transition: 1.5s all ease;
+        }
+
+        .icon img {
+          width: 60%;
+          margin-top: 20%;
+        }
+
+        .icon-text {
+          margin-left: 0;
+          transition: 1s all ease;
+        }
+
+        .icon-text-hidden {
+          margin-left: -20%;
+          opacity: 0;
+          visibility: 0;
+          transition: 1s all ease;
+        }
+
+        .icon.icon-show {
+          opacity: 1;
+          transform: rotate(720deg) scale(1);
+          transition: 1.5s all ease;
+        }
+
+        .icon-text span {
+          margin-left: 5%;
+        }
+
+        .text-special1 {
+          font-size: 1.6vw;
+          line-height: 2vw;
+          margin: 3vw auto 5vw auto;
+        }
+
+        .bee3D--slide {
+          width: 30vw;
+          height: 30vw;
+          left: 47.5%;
+        }
+
+        .bee3D--slide .slide-pad {
+          width: 71%;
+          height: 71%;
+          position: absolute;
+          left: 14%;
+          top: 18%;
+          z-index: -1;
+          background-image: linear-gradient(30deg, rgba(135,115,18,1) 0%, rgba(188,161,3,1) 100%);
+          opacity: 0.25;
+          transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
+        }
+
+        .bee3D--slide .slide-img {
+          width: 60%;
+          margin-top: 18%;
+        }
+
+        .bee3D--slide .slide-title {
+          position: absolute;
+          left: 50%;
+          top: 3vw;
+          transform: translate(-50%, 0);
+          text-align: center;
+          padding: 0.8vw 1.6vw;
+          background-image: linear-gradient(30deg, rgba(224,95,7,1) 0%, rgba(255,132,37,1) 100%);
+          color: black;
+          font-size: 1.6vw;
+          font-weight: bold;
+          font-family: "Quicksand", Arial, sans-serif;
+          border-radius: 1vw;
+          opacity: 0;
+          transition: 0.6s all ease;
+        }
+
+        .bee3D--slide__active .slide-title {
+          opacity: 1;
+          top: 0;
+          transition: 0.6s all ease;
+          transition-delay: 250ms;
+        }
+
+        .bee3D--slide .slide-number {
+          position: absolute;
+          left: 50%;
+          bottom: -1vw;
+          transform: translate(-50%, 0);
+          text-align: center;
+          width: 8vw;
+          height: 8vw;
+          background-image: linear-gradient(30deg, rgba(224,95,7,1) 0%, rgba(255,132,37,1) 100%);
+          color: black;
+          font-size: 1.5vw;
+          line-height: 7.5vw;
+          font-weight: bold;
+          font-family: "Quicksand", Arial, sans-serif;
+          border-radius: 100%;
+          opacity: 0;
+          transition: 0.6s all ease;
+          z-index: 100;
+        }
+
+        .bee3D--slide .slide-number em {
+          font-size: 3vw;
+          font-style: normal;
+        }
+
+        .bee3D--slide__active .slide-number {
+          opacity: 1;
+          bottom: 0;
+          transition: 0.6s all ease;
+          transition-delay: 750ms;
+        }
+
+        .bee3D--slide .slide-number-hidden {
+          display: none;
+        }
+
+
+        /* Style overrides */
+
+        .bee3D--slide {
+          margin-left: -212px;
+        }
+
+        .bee3D--nav {
+            z-index: 1000;
+        }
+
+        .bee3D--effect__arc .bee3D--after-1 {
+          transform: translate(75%, 20%) rotateZ(5deg) scale(0.7);
+          opacity: 0.35;
+          filter: blur(4px);
+        }
+
+        .bee3D--effect__arc .bee3D--after-2 {
+          transform: translate(120%, 40%) rotateZ(7deg) scale(0.5);
+          opacity: 0.2;
+          filter: blur(5px);
+        }
+
+        .bee3D--effect__arc .bee3D--after-3 {
+          transform: translate(150%, 60%) rotateZ(9deg) scale(0.3);
+          opacity: 0.15;
+          filter: blur(6px);
+        }
+
+        .bee3D--effect__arc .bee3D--before-1 {
+          transform: translate(-75%, 20%) rotateZ(-5deg) scale(0.7);
+          opacity: 0.35;
+          filter: blur(4px);
+        }
+
+        .bee3D--effect__arc .bee3D--before-2 {
+          transform: translate(-120%, 40%) rotateZ(-7deg) scale(0.5);
+          opacity: 0.2;
+          filter: blur(5px);
+        }
+
+        .bee3D--effect__arc .bee3D--before-3 {
+          transform: translate(-150%, 60%) rotateZ(-9deg) scale(0.3);
+          opacity: 0.15;
+          filter: blur(6px);
+        }
+
+        #description-wrapper {
+          margin-top: 3vw;
+        }
+
+
+        @media only screen and (max-width: 768px) {
+
+          .text-special1 {
+            font-size: 2.5vw;
+            line-height: 3.5vw;
+            margin: 5vw auto;
+          }
+
+          .icon {
+            width: 10vw;
+            height: 10vw;
+          }
+
+        }
+
+        @media only screen and (max-width: 480px) {
+
+          .text-special1 {
+            font-size: 3.5vw;
+            line-height: 4vw;
+            margin: 6vw auto;
+          }
+
+          .icon {
+            width: 15vw;
+            height: 15vw;
+          }
+
+        }
+
+        @media only screen and (min-width: 1200px) {
+
+          #description-wrapper {
+            margin-top: 4vw;
+          }
+
+        }
+
+        @media only screen and (min-width: 1440px) {
+
+          #description-wrapper {
+            margin-top: 6vw;
+          }
+
+          .bee3D--slide .slide-number {
+            width: 110px;
+            height: 110px;
+          }
+
+        }
+
+
+        </style>
+
+    </head>
+
+    <body>
+
+  		<div id="music-container"></div>
+  		<div id="voice-container"></div>
+  		<div id="soundfx-container"></div>
+
+  		<div class="loading-container">
+  		    <div class="loading-circle"></div>
+  		</div>
+
+
+		<!-- Template specific html -->
+
+		<article class="question-wrapper">
+      <header>
+				<h1 class="title-page title-page-top pagetheme-text-darkcolour-bw centered">
+          <span class="edit-text" id="content_text0"></span>
+        </h1>
+				<h2 class="text-special1 pagetheme-text-mediumcolour text-center width80per centered opacity0 anim-appear-margin-right">
+          <span class="edit-text" id="content_text1"></span>
+        </h2>
+		  </header>
+			<section id="main-tmpl-container" class=" width90d70per centered">
+
+          <div id="items-wrapper" class="poster-main items-wrapper width100per relative">
+            <!-- <div class="poster-btn poster-prev-btn"></div> -->
+
+            <div id="items-list" class="poster-list text-center centered">
+              <span class="bee3D--nav bee3D--nav__prev"></span>
+              <script type="application/mustache" id="tmpl-items">
+                <section class="bee3D--slide" data-id="{{id}}">
+                  <div class="slide-title">
+                    <span class="edit-text" id="content_text30{{id}}"></span></div>
+                  <div class="slide-pad">&nbsp;</div>
+                  <img  class="slide-img" src="../files/{{image}}" />
+                  <div class="slide-number slide-number-{{visibleNum}}">
+                    <span class="edit-text" id="content_text40{{id}}"></span>
+                  </div>
+                </section>
+              </script>
+              <span class="bee3D--nav bee3D--nav__next"></span>
+            </div>
+            <!-- <div class="poster-btn poster-next-btn"></div> -->
+          </div>
+
+			</section>
+
+      <section id="description-wrapper" class="relative margin-top30 width480 height175 centered">
+         <script type="application/mustache" id="tmpl-descriptions">
+          <div id="description{{id}}" class="description absolute secondary-backcolour-dark padding20-h padding5-v width90per" style="display:none; left:0; top:0">
+            <p>
+              <span class="edit-text" id="content_text20{{id}}"></span>
+            </p>
+          </div>
+        </script>
+      </section>
+
+		</article>
+
+		<!-- End of template specific html -->
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+		<script src="js/vendor/jquery.jeditable.min.js"></script>
+
+		<script src="js/config-tmpl.js"></script>
+		<script src="js/lib/ylearn-tmpl.js"></script>
+		<script src="js/main-tmpl.js"></script>
+
+		<!-- Template specific scripts -->
+		<script src="js/vendor/mustache.js"></script>
+    <script src="js/vendor/classie.js"></script>
+    <script src="js/vendor/bee3D.js"></script>
+		<script src="js/tmpl/tmpl-ig-carousel.js"></script>
+		<!-- End of template specific scripts -->
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+    </script>
+
+    </body>
+
+</html>

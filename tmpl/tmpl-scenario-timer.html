@@ -1,0 +1,125 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9" lang=""> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10" lang=""> <![endif]-->
+<!--[if gt IE 9><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../css/normalize.min.css">
+		<link rel="stylesheet" href="css/main-tmpl.css">
+
+		<!-- Template specific css -->
+		<link rel="stylesheet" href="css/vendor/jquery-ui.css" />
+		<!-- End of template specific css -->
+
+      <script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+      <style>
+        .pin-tooltip {
+          background-color: rgba(0,0,0,0.75);
+          font-size: 1.2vw;
+          line-height: 1em;
+          max-width: 40vw;
+          color: white;
+          padding: 1.5vw;
+          line-height: 1.75vw;
+          margin-top: -4vw;
+        }
+
+        .number {
+          width: 4vw;
+          height: 4vw;
+          color: white;
+          font-weight: bold;
+          font-family: "Quicksand", sans-serif;
+          font-size: 3vw;
+          line-height: 4vw;
+          background: #111111;
+          border-radius: 2vw;
+          display: none;
+        }
+      </style>
+    </head>
+
+    <body>
+
+		<div id="music-container"></div>
+		<div id="voice-container"></div>
+		<div id="soundfx-container"></div>
+
+		<div class="loading-container">
+		    <div class="loading-circle"></div>
+		</div>
+
+
+		<!-- Template specific html -->
+
+		<article>
+			<section class="back-image-wrapper width100per relative">
+        <header>
+          <h1 class="title-page title-page-top pagetheme-text-darkcolour-bw centered margin-bottom0">
+            <span class="edit-text" id="content_text0"></span>
+          </h1>
+        </header>
+				<img id="back-image-main" class="back-image width100per" src="">
+				 <script type="application/mustache" id="tmpl-pins">
+					<div id="pin{{order}}" class="absolute pin" style="z-index:10{{order}}; top:{{top}}; left:{{left}}; display: none;" data-pin-id="{{order}}">
+            <div id="pin-bulb{{order}}" class="dummypin lottie-bulb button-type-element" style="width:{{w}}; height:{{h}};"></div>
+            <div class="number button-type-element dummypin">{{label}}</div>
+            <div class="pin-tooltip shadow-material-soft" style="display: none;">
+              <span class="content_text20{{order}}"></span>
+            </div>
+          </div>
+				 </script>
+		    </section>
+        <div class="absolute" style="left: 5vw; top: 5vw; width: 30vw;">
+          <div id="intro-block">
+            <p class="text-special1 text-center"><span id="content_text2" class="edit-text"></p>
+          </div>
+          <div id="lt-timer" class="width80per centered text-center"></div>
+          <div id="answers-submit" style="margin-top:-12.5vw; position: relative;" class="button-submit active-element-hover-shadow active-element-hover-scale width100 padding20 margin-top20"><span class="content_text4"></span></div>
+        </div>
+
+		</article>
+
+		<section id="admin-hidden">
+      <span id="content_text4" class="edit-text"></span>
+		</section>
+
+		<!-- End of template specific html -->
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+		<script src="js/vendor/jquery.jeditable.min.js"></script>
+		<script src="js/vendor/jquery-ui.min.js"></script>
+
+		<script src="js/config-tmpl.js"></script>
+		<script src="js/lib/ylearn-tmpl.js"></script>
+		<script src="js/main-tmpl.js"></script>
+
+		<!-- Template specific scripts -->
+		<script src="js/vendor/mustache.js"></script>
+    <script src="js/vendor/lottie.js"></script>
+		<script src="js/tmpl/tmpl-scenario-timer.js"></script>
+		<!-- End of template specific scripts -->
+
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+
+</html>

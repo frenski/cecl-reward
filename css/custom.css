@@ -1,0 +1,33 @@
+/*! Custom files -specific for each eLearning - depending on modules, etc */
+
+.section-indicator1{ background-image: url('custom-img/ico-module1.png'); }
+.section-indicator1.section-indicator-current{ background-image: url('custom-img/ico-module1-b.png'); }
+.section-indicator2{ background-image: url('custom-img/ico-module2.png'); }
+.section-indicator2.section-indicator-current{ background-image: url('custom-img/ico-module2-b.png'); }
+.section-indicator3{ background-image: url('custom-img/ico-module3.png'); }
+.section-indicator3.section-indicator-current{ background-image: url('custom-img/ico-module3-b.png'); }
+.section-indicator4{ background-image: url('custom-img/ico-module4.png'); }
+.section-indicator4.section-indicator-current{ background-image: url('custom-img/ico-module4-b.png'); }
+.section-indicator5{ background-image: url('custom-img/ico-module5.png'); }
+.section-indicator5.section-indicator-current{ background-image: url('custom-img/ico-module5-b.png'); }
+.section-indicator6{ background-image: url('custom-img/ico-module6.png'); }
+.section-indicator6.section-indicator-current{ background-image: url('custom-img/ico-module6-b.png'); }
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+	
+	.section-indicator1{ background-image: url('custom-img/ico-module1@2x.png'); }
+	.section-indicator1.section-indicator-current{ background-image: url('custom-img/ico-module1-b@2x.png'); }
+	.section-indicator2{ background-image: url('custom-img/ico-module2@2x.png'); }
+	.section-indicator2.section-indicator-current{ background-image: url('custom-img/ico-module2-b@2x.png'); }
+	.section-indicator3{ background-image: url('custom-img/ico-module3@2x.png'); }
+	.section-indicator3.section-indicator-current{ background-image: url('custom-img/ico-module3-b@2x.png'); }
+	.section-indicator4{ background-image: url('custom-img/ico-module4@2x.png'); }
+	.section-indicator4.section-indicator-current{ background-image: url('custom-img/ico-module4-b@2x.png'); }
+	.section-indicator5{ background-image: url('custom-img/ico-module5@2x.png'); }
+	.section-indicator5.section-indicator-current{ background-image: url('custom-img/ico-module5-b@2x.png'); }
+	.section-indicator6{ background-image: url('custom-img/ico-module6@2x.png'); }
+	.section-indicator6.section-indicator-current{ background-image: url('custom-img/ico-module6-b@2x.png'); }
+    
+}

@@ -1,0 +1,218 @@
+
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9" lang=""> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10" lang=""> <![endif]-->
+<!--[if gt IE 9><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic' rel='stylesheet' type='text/css'>
+    		<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/normalize.min.css">
+    		<link rel="stylesheet" href="css/main-tmpl.css">
+
+        <script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+        <style>
+
+        .image-container {
+          position: relative;
+          width: 100%;
+          overflow: hidden;
+        }
+
+        #theimage {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          clip-path: circle(0% at 8% 8%);
+        }
+
+        .img-stage1 {
+          animation: reveal1 2s ease-out forwards;
+        }
+
+        .img-stage2 {
+          animation: reveal2 2s ease-out forwards;
+        }
+
+        .img-stage3 {
+          animation: reveal3 2s ease-out forwards;
+        }
+
+        #header {
+          position: absolute;
+          top: 20px;
+          width: 100%;
+          left: 0;
+          z-index: 1000;
+        }
+
+        @keyframes reveal1 {
+          from {
+            clip-path: circle(0% at 21% 21%);
+          }
+          to {
+            clip-path: circle(12% at 21% 21%);
+          }
+        }
+
+        @keyframes reveal2 {
+          from {
+            clip-path: circle(12% at 21% 21%);
+          }
+          to {
+            clip-path: circle(24% at 35% 21%);
+          }
+        }
+
+        @keyframes reveal3 {
+          from {
+            clip-path: circle(27% at 35% 21%);
+          }
+          to {
+            clip-path: circle(32% at 36% 35%);
+          }
+        }
+
+        .arrow-next, .arrow-prev {
+          position: absolute;
+          z-index: 1000;
+          display: block;
+          width: 5vw;
+          height: 5vw;
+          background-repeat: no-repeat;
+          cursor: pointer;
+        }
+
+        .arrow-next {
+          top: 39%;
+          right: 5%;
+          background-image: url("img/arrows/arrow-color-left.svg");
+          transform: perspective(50em) scale(1.4) rotate(-90deg);
+        }
+
+        .arrow-prev {
+          top: 30%;
+          right: 5%;
+          background-image: url("img/arrows/arrow-color-right.svg");
+          transform: perspective(50em) scale(1.1) rotate(-90deg);
+        }
+
+        .slides-wrapper {
+          position: absolute;
+          right: 15%;
+          top: 20%;
+          z-index: 100;
+          width: 30%;
+        }
+
+        .slide {
+          position: absolute;
+          left: 0;
+          top: 0;
+          transition: all 0.5s ease;
+          opacity: 1;
+          visibility: visible;
+          width: 100%;
+        }
+
+        .text-box {
+          background-color: #315737;
+          color: white;
+          padding: 10px 30px;
+          text-align: left;
+        }
+
+        .slide-disappear-top {
+          opacity: 0;
+          visibility: hidden;
+          top: -150px;
+          transition: all 0.5s ease;
+        }
+
+        .slide-disappear-bottom {
+          opacity: 0;
+          top: 150px;
+          transition: all 0.5s ease;
+          visibility: hidden;
+        }
+
+        </style>
+    </head>
+
+    <body>
+
+		<div id="music-container"></div>
+		<div id="voice-container"></div>
+		<div id="soundfx-container"></div>
+
+		<div class="loading-container">
+		    <div class="loading-circle"></div>
+		</div>
+
+
+		<!-- Template specific html -->
+
+		<article id="organisations-wrapper">
+		  <header>
+				<h1 class="title-page title-page-top pagetheme-text-darkcolour-bw centered"><span class="edit-text" id="content_text0"></span></h1>
+		  </header>
+			<section class="text-center relative">
+        <h2 id="header" class="subtitle-page title-page-big pagetheme-text-lightcolour text-center width80per centered"><span class="edit-text" id="content_text1"></span></h2>
+        <div class="image-container" />
+				    <img class="img-stage1" id="theimage" src="" />
+        </div>
+        <div class="slides-wrapper">
+          <div class="slide clearfix" id="slide1">
+            <div class="text-box shadow-material-soft"><p><span class="edit-text" id="content_text200"></span></p></div>
+          </div>
+          <div class="slide clearfix slide-disappear-bottom" id="slide2">
+            <div class="text-box shadow-material-soft"><p><span class="edit-text" id="content_text201"></span></p></div>
+          </div>
+          <div class="slide clearfix slide-disappear-bottom" id="slide3">
+            <div class="text-box shadow-material-soft"><p><span class="edit-text" id="content_text202"></span></p></div>
+          </div>
+        </div>
+        <span class="arrow-prev" id="arrow-prev" style="opacity: 0.2"></span>
+        <span class="arrow-next" id="arrow-next"></span>
+			</section>
+
+		</article>
+
+
+		<!-- End of template specific html -->
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+		<script src="js/vendor/jquery.jeditable.min.js"></script>
+
+		<script src="js/config-tmpl.js"></script>
+		<script src="js/lib/ylearn-tmpl.js"></script>
+		<script src="js/main-tmpl.js"></script>
+
+		<!-- Template specific scripts -->
+    <script src="js/vendor/lottie.js"></script>
+		<script src="js/tmpl/tmpl-zoomouts.js"></script>
+		<!-- End of template specific scripts -->
+
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+
+</html>

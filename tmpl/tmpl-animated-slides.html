@@ -1,0 +1,269 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9" lang=""> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10" lang=""> <![endif]-->
+<!--[if gt IE 9><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic' rel='stylesheet' type='text/css'>
+		    <link href='https://fonts.googleapis.com/css?family=Quicksand:700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../css/normalize.min.css">
+		    <link rel="stylesheet" href="css/main-tmpl.css">
+
+    		<!-- Template specific css -->
+    		<link rel="stylesheet" href="css/vendor/jquery.nouislider.css" />
+    		<!-- End of template specific css -->
+
+        <script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+        <style>
+          .slides-wrapper {
+            position: relative;
+            margin-top: 100px;
+            height: 30vw;
+          }
+
+          .player-wrapper {
+            width: 45%;
+            float: right;
+            margin-top: 2vw;
+            margin-right: 1%;
+          }
+
+          .rtl .player-wrapper {
+            float: left;
+            margin-right: 0;
+            margin-left: 5%;
+          }
+
+          .lt-player {
+            width: 100%;
+            /* height: 15vw; */
+          }
+
+          .text-box {
+            margin-left: 7%;
+            margin-right: 3%;
+            height: 30vw;
+            width: 40%;
+            float: left;
+            overflow-y: scroll;
+          }
+
+          .rtl .text-box {
+            float: right;
+          }
+
+          .text-box p {
+            padding: 1vw 2vw;
+            font-size: 1.6vw;
+            line-height: 2.4vw;
+          }
+
+          .slide {
+            position: absolute;
+            width: 100%;
+            z-index: 100;
+            transition: all 0.5s ease;
+            opacity: 1;
+            visibility: visible;
+            top: 0;
+          }
+
+          .slide-disappear-top {
+            opacity: 0;
+            visibility: hidden;
+            top: -150px;
+            transition: all 0.5s ease;
+          }
+
+          .slide-disappear-bottom {
+            opacity: 0;
+            top: 150px;
+            transition: all 0.5s ease;
+            visibility: hidden;
+          }
+
+          #arrow-up, #arrow-down {
+            position: absolute;
+            width: 5vw;
+            height: 3vw;
+            left: 25%;
+            z-index: 1000;
+          }
+
+          .rtl #arrow-up, .rtl #arrow-down {
+            position: absolute;
+            width: 5vw;
+            height: 3vw;
+            left: auto;
+            right: 20%;
+            z-index: 1000;
+          }
+
+          #arrow-up {
+            top: -4vw;
+          }
+
+          #arrow-down {
+            bottom: -4vw;
+          }
+
+          #section-icon {
+            width: 10vw;
+            height: 10vw;
+            top: 1vw;
+            right: 1vw;
+            border-radius: 10vw;
+            border: 6px solid white;
+            display: none;
+          }
+
+          #section-icon-img {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+          }
+
+          #section-icon-text {
+            width: 80%;
+            position: absolute;
+            left: 0;
+            bottom: -10%;
+            border-radius: 1.2vw;
+            color: black;
+            padding: 5% 10%;
+            font-weight: bold;
+          }
+
+          @media only screen and (max-width: 768px) {
+            .text-box p {
+              font-size: 2vw;
+            }
+
+            .player-wrapper {
+              float: none;
+              width: 70%;
+              margin: auto;
+            }
+
+            .text-box {
+              float: none;
+              width: 100%;
+              margin: auto;
+            }
+
+            .slides-wrapper {
+              margin-top: 50px;
+            }
+
+            #arrow-up, #arrow-down {
+              right: 5%;
+              left: auto;
+              top: -12vw;
+              width: 10vw;
+              height: 7vw;
+            }
+
+            #arrow-down {
+              top: -2vw;
+            }
+
+          }
+
+          @media only screen and (max-width: 480px) {
+            .text-box p {
+              font-size: 3vw;
+            }
+          }
+
+        </style>
+
+    </head>
+
+    <body class="width100per height100per">
+
+  		<div id="music-container"></div>
+  		<div id="voice-container"></div>
+  		<div id="soundfx-container"></div>
+
+  		<div class="loading-container">
+  		    <div class="loading-circle"></div>
+  		</div>
+
+			<div class="popup-general" class="rcorner-standard-top" style="right: 10%; left: auto; margin-left:0; top: 10vw; width: 30%; font-size: 1.5vw; line-height: 2vw;">
+				<div class="popup-general-content secondary-backcolour-dark pagetheme-text-lightcolour rcorner-standard-top">
+          <p id="answers-response-feedback" class="text-italic text-left">
+            <span id="content_text2" class="edit-text"></span>
+          </p>
+        </div>
+			</div>
+
+
+		<!-- Template specific html -->
+
+		<article class="doc-wrapper width100per height100per">
+      <header>
+				<h1 class="title-page title-page-top pagetheme-text-darkcolour-bw centered">
+          <span class="edit-text" id="content_text0"></span>
+        </h1>
+		  </header>
+      <section class="slides-wrapper">
+        <div id="arrow-up" class="arrow-color arrow-color-up pagetheme-text-colour" style="">&nbsp;</div>
+    			<div class="slides-container width100per centered relative clearfix">
+            <script type="application/mustache" id="tmpl-slides">
+              <div class="slide clearfix slide-disappear-bottom" id="slide{{order}}">
+                <div class="player-wrapper">
+                  <div id="lt-player{{order}}" class="lt-player"></div>
+                </div>
+                <div class="text-box pagetheme-background shadow-material-soft"><p><span class="edit-text" id="content_text2{{order}}"></span></p></div>
+              </div>
+            </script>
+    			</div>
+        <div id="arrow-down" class="arrow-color arrow-color-down pagetheme-text-colour">&nbsp;</div>
+      </section>
+
+      <div id="section-icon" class="absolute shadow-material-soft">
+        <img id="section-icon-img" src="">
+        <div id="section-icon-text" class="pagetheme-background"><span class="edit-text" id="content_text_sec000"></span></div>
+      </div>
+
+		</article>
+
+		<!-- End of template specific html -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+		<script src="js/vendor/jquery.jeditable.min.js"></script>
+
+		<script src="js/config-tmpl.js"></script>
+		<script src="js/lib/ylearn-tmpl.js"></script>
+		<script src="js/main-tmpl.js"></script>
+
+		<!-- Template specific scripts -->
+		<script src="js/vendor/mustache.js"></script>
+    <script src="js/vendor/lottie.js"></script>
+		<script src="js/tmpl/tmpl-animated-slides.js"></script>
+		<!-- End of template specific scripts -->
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+    </script>
+
+    </body>
+
+</html>

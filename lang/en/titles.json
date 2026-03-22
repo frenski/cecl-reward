@@ -1,0 +1,32 @@
+{
+    "mainTitle": "CECL eLearning",
+    "subTitle": "FOSTER",
+    "module": {
+        "title": "Unit 1",
+        "sections": [
+            {
+                "title": "Module 1: Child-friendly justice",
+				        "subsections":[]
+            },
+            {
+                "title": "Module 2: The Rights of Child Victims of Crime in International and EU Law",
+				        "subsections":[]
+            },
+            {
+                "title": "Module 3: Protection of Children’s Personal Data",
+				        "subsections":[]
+            },
+			      {
+                "title": "Module 4: Challenges in Ethics: Child and Adolescent Psychology",
+				        "subsections":[]
+            },
+            {
+                "title": "Module 5: Integrated approach ",
+                "subsections":[]
+            }
+        ]
+    },
+	"sysMessages":{
+		"wrongPage": "Wrong page, click to go home!"
+	}
+}

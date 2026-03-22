@@ -1,0 +1,118 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9" lang=""> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10" lang=""> <![endif]-->
+<!--[if gt IE 9><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../css/normalize.min.css">
+    		<link rel="stylesheet" href="css/main-tmpl.css">
+
+    		<!-- Template specific css -->
+    		<link rel="stylesheet" href="css/vendor/jquery.nouislider.css" />
+    		<!-- End of template specific css -->
+
+        <script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+        <style>
+          .bullet {
+            transition: 0.5s all ease;
+          }
+
+          .arrow-color {
+            width: 20px;
+            height: 30px;
+          }
+
+          .button-enlarge {
+            transform: scale(1.2);
+            transition: 0.5s all ease;
+          }
+
+          #title-page {
+            margin: 5vw auto;
+            font-weight: bold;
+            padding: 0;
+            font-family: "Quicksand", "Open Sans", Arial, sans-serif;
+          }
+        </style>
+
+    </head>
+
+    <body>
+
+		<div class="loading-container">
+		    <div class="loading-circle"></div>
+		</div>
+
+
+		<!-- Template specific html -->
+
+		<article>
+      <header>
+        <h1 class="title-page title-page-top pagetheme-text-darkcolour-bw centered margin0"><span class="edit-text" id="content_text0"></span></h1>
+        <h2 class="subtitle-page title-page-big secondary-textcolour-dark text-center width80per centered opacity0 anim-appear-margin-right">
+          <span class="edit-text" id="content_text1"></span>
+        </h2>
+      </header>
+			<section id="interact-wrapper" class="width480 clearfix centered opacity0 anim-appear-margin-bottom anim-delay-1">
+				<div id="bullets-wrapper" class="clearfix">
+					&nbsp;
+					<script type="application/mustache" id="tmpl-bullets">
+						<div id="bulletandarrow{{order}}" class="bulletandarrow float clearfix {{lastClass}}">
+							<div id="bullet{{order}}" class="bullet float button80x80 button-type-element" style="background-image:url('../files/{{img}}'); background-position:center center; background-repeat:no-repeat; background-size:100%" data-bullet-id="{{order}}"></div>
+							<div class="float arrow-color arrow-color-right margin40-h margin-top20 {{last}}"></div>
+						</div>
+					</script>
+				</div>
+			</section>
+      <div class="height30">&nbsp;</div>
+      <section id="description-wrapper" class="relative margin-top40 width480 height175 centered opacity0 anim-appear-margin-bottom anim-delay-1">
+         <script type="application/mustache" id="tmpl-descriptions">
+          <div id="description{{order}}" class="description absolute secondary-backcolour-dark padding20-h padding5-v width90per" style="display:none; left:0; top:0">
+            <p>
+              <span class="edit-text" id="content_text20{{order}}"></span>
+            </p>
+          </div>
+        </script>
+      </section>
+		</article>
+
+		<div class="height200">&nbsp;</div>
+
+		<!-- End of template specific html -->
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+		<script src="js/vendor/jquery.jeditable.min.js"></script>
+
+		<script src="js/config-tmpl.js"></script>
+		<script src="js/lib/ylearn-tmpl.js"></script>
+		<script src="js/main-tmpl.js"></script>
+
+		<!-- Template specific scripts -->
+		<script src="js/vendor/mustache.js"></script>
+		<script src="js/tmpl/tmpl-icons-steps-horizontal.js"></script>
+		<!-- End of template specific scripts -->
+
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+
+</html>

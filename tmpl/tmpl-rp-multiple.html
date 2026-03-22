@@ -1,0 +1,135 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9" lang=""> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10" lang=""> <![endif]-->
+<!--[if gt IE 9><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic' rel='stylesheet' type='text/css'>
+		    <link href='https://fonts.googleapis.com/css?family=Quicksand:700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../css/normalize.min.css">
+		    <link rel="stylesheet" href="css/main-tmpl.css">
+
+    		<!-- Template specific css -->
+    		<link rel="stylesheet" href="css/vendor/jquery.nouislider.css" />
+    		<!-- End of template specific css -->
+
+        <script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+
+    <style>
+
+    .title-page-inner {
+      padding-left: 0;
+    }
+
+    </style>
+
+    <body>
+
+  		<div id="music-container"></div>
+  		<div id="voice-container"></div>
+  		<div id="soundfx-container"></div>
+
+  		<div class="loading-container">
+  		    <div class="loading-circle"></div>
+  		</div>
+
+  		<div class="popup-container">
+  			<div class="popup-general" title="">
+          <div id="lt-player-popup" class="popup-general-topanim"></div>
+  				<div class="popup-general-title title-page-big secondary-textcolour-dark text-center"><span id="content_text_answersresponsetext" class="edit-text content_text3"></span></div>
+  				<div class="popup-general-content">
+            <div>
+              <span id="content_text_answersresponsetext" class="edit-text content_text5"></span>
+              <p id="answers-response-correct" class="pagetheme-text-colour text-label-medium"></p>
+            </div>
+            <p id="answers-response-feedback" class="text-italic">
+              <span id="content_text_feedback" class="edit-text"></span>
+            </p>
+          </div>
+  				<div class="text-center">
+  					<a href="#" id="popup-general-button" class="popup-general-button anim-pulsate button-type-element element-gradien-dark circle centered"> <span>&gt;</span> </a>
+  				</div>
+  			</div>
+  		</div>
+
+
+		<!-- Template specific html -->
+
+		<article class="question-wrapper">
+      <header>
+				<h1 class="title-page title-page-top pagetheme-text-darkcolour-bw centered">
+          <span class="edit-text" id="content_text0"></span>
+        </h1>
+				<h2 class="subtitle-page title-page-big secondary-textcolour-dark text-center width80per centered opacity0 anim-appear-margin-right">
+          <span class="edit-text" id="content_text1"></span>
+        </h2>
+		  </header>
+			  <section class="answers width90d70per centered">
+  				<header class="">
+  					<h1 class="title-page title-page-inner pagetheme-text-lightcolour text-center opacity0 anim-appear-margin-bottom anim-delay-1">
+              <span id="content_text2" class="edit-text"></span>
+            </h1>
+  				</header>
+				  <div id="answers-wrapper" class="answers-wrapper">
+					<script type="application/mustache" id="tmpl-answer">
+						<div class="answer relative rcorner-standard button-type-element active-element-hover-shadow active-element-hover-scale display-table width100per margin-bottom10 element-clickable opacity0 anim-appear-margin-bottom anim-delay-2" data-answer="{{id}}">
+							<div class="answer-left rcorner-standard-left display-tablecell display-tablecell-middle width15per text-center text-label-extrabig element-gradien-dark">
+							    <span id="content_text{{sequenceTextId}}" class="edit-text"></span>
+							</div>
+							<div class="answer-right rcorner-standard-right display-tablecell width85per element-background-verylight">
+								<p class="padding10 padding20-h">
+									<span id="content_text{{textId}}" class="edit-text"></span>
+								</p>
+							</div>
+              <div id="lt-answer-response{{id}}" class="animicon-response"></div>
+						</div>
+					</script>
+				</div>
+
+				<div id="answers-submit" class="button-submit active-element-hover-shadow active-element-hover-scale width100 padding20 margin-top20 opacity0 anim-appear-margin-bottom anim-delay-4"><span id="content_text4" class="edit-text"></span></div>
+
+				<div class="height150">&nbsp;</div>
+
+			</section>
+
+		</article>
+
+		<!-- End of template specific html -->
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+		<script src="js/vendor/jquery.jeditable.min.js"></script>
+
+		<script src="js/config-tmpl.js"></script>
+		<script src="js/lib/ylearn-tmpl.js"></script>
+		<script src="js/main-tmpl.js"></script>
+
+		<!-- Template specific scripts -->
+		<script src="js/vendor/mustache.js"></script>
+    <script src="js/vendor/lottie.js"></script>
+		<script src="js/tmpl/tmpl-rp-multiple.js"></script>
+		<!-- End of template specific scripts -->
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+    </script>
+
+    </body>
+
+</html>
