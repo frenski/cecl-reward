@@ -49,3 +49,9 @@
 	background: #2D2D2D;
 	color: white
 }
+
+.title {
+  background-size: auto 100%;
+	color: black;
+	padding-right: 18%;
+}
