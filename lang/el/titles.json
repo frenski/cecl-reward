@@ -1,0 +1,28 @@
+{
+    "mainTitle": "CECL eLearning",
+    "subTitle": "FOSTER",
+    "module": {
+        "title": "Μονάδα 1",
+        "sections": [
+            {
+                "title": "Ενότητα 1: Δικαιώματα και Υποχρεώσεις",
+                "subsections": []
+            },
+            {
+                "title": "Ενότητα 2: Οδηγίες Υγείας και Ιατρικής",
+                "subsections": []
+            },
+            {
+                "title": "Ενότητα 3: Υποστήριξη Ψυχικής Υγείας",
+                "subsections": []
+            },
+            {
+                "title": "Ενότητα 4: Πρακτικές ασκήσεις",
+                "subsections": []
+            }
+        ]
+    },
+    "sysMessages": {
+        "wrongPage": "Λάθος σελίδα, κάντε κλικ για να επιστρέψετε στην αρχή!"
+    }
+}
