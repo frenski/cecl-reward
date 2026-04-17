@@ -1,1 +1,1 @@
-var YLEARN_CONF_ENV = 'local';
+var YLEARN_CONF_ENV = 'staging';

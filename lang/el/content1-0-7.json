@@ -1,17 +1,1 @@
-{
-    "texts": {
-        "content_text0": "ΣΗΜΕΙΟ ΕΠΑΝΕΞΕΤΑΣΗΣ",
-        "content_text1": "ΣΗΜΕΙΟ ΕΠΑΝΕΞΕΤΑΣΗΣ #3",
-        "content_text2": "<b>Διαβάστε την ερώτηση και επιλέξτε τη/τις σωστή/ές απάντηση/εις.</b><br><br>Ποιο από τα παρακάτω αποτελεί δικαίωμα κρατουμένου;",
-        "content_text400": "Α",
-        "content_text401": "Β",
-        "content_text402": "Γ",
-        "content_text403": "Δ",
-        "content_text100": "Αγνόηση κανόνων φυλακής",
-        "content_text101": "Θρησκευτική ελευθερία",
-        "content_text102": "Άρνηση όλων των ερευνών",
-        "content_text103": "Αποφυγή πειθαρχίας",
-        "content_text_answersresponsetext": "Σωστή απάντηση:",
-        "content_text4": "υποβολή"
-    }
-}
+{"texts":{"content_text0":"\u03a3\u0397\u039c\u0395\u0399\u039f \u0395\u03a0\u0391\u039d\u0395\u039e\u0395\u03a4\u0391\u03a3\u0397\u03a3","content_text1":"\u03a3\u0397\u039c\u0395\u0399\u039f \u0395\u039e\u0395\u03a4\u0391\u03a3\u0397\u03a3 #3","content_text2":"<b>\u0394\u03b9\u03b1\u03b2\u03ac\u03c3\u03c4\u03b5 \u03c4\u03b7\u03bd \u03b5\u03c1\u03ce\u03c4\u03b7\u03c3\u03b7 \u03ba\u03b1\u03b9 \u03b5\u03c0\u03b9\u03bb\u03ad\u03be\u03c4\u03b5 \u03c4\u03b7\/\u03c4\u03b9\u03c2 \u03c3\u03c9\u03c3\u03c4\u03ae\/\u03ad\u03c2 \u03b1\u03c0\u03ac\u03bd\u03c4\u03b7\u03c3\u03b7\/\u03b5\u03b9\u03c2.<\/b><br><br>\u03a0\u03bf\u03b9\u03bf \u03b1\u03c0\u03cc \u03c4\u03b1 \u03c0\u03b1\u03c1\u03b1\u03ba\u03ac\u03c4\u03c9 \u03b1\u03c0\u03bf\u03c4\u03b5\u03bb\u03b5\u03af \u03b4\u03b9\u03ba\u03b1\u03af\u03c9\u03bc\u03b1 \u03ba\u03c1\u03b1\u03c4\u03bf\u03c5\u03bc\u03ad\u03bd\u03bf\u03c5;","content_text400":"\u0391","content_text401":"\u0392","content_text402":"\u0393","content_text403":"\u0394","content_text100":"\u0391\u03b3\u03bd\u03cc\u03b7\u03c3\u03b7 \u03ba\u03b1\u03bd\u03cc\u03bd\u03c9\u03bd \u03c6\u03c5\u03bb\u03b1\u03ba\u03ae\u03c2","content_text101":"\u0398\u03c1\u03b7\u03c3\u03ba\u03b5\u03c5\u03c4\u03b9\u03ba\u03ae \u03b5\u03bb\u03b5\u03c5\u03b8\u03b5\u03c1\u03af\u03b1","content_text102":"\u0386\u03c1\u03bd\u03b7\u03c3\u03b7 \u03cc\u03bb\u03c9\u03bd \u03c4\u03c9\u03bd \u03b5\u03c1\u03b5\u03c5\u03bd\u03ce\u03bd","content_text103":"\u0391\u03c0\u03bf\u03c6\u03c5\u03b3\u03ae \u03c0\u03b5\u03b9\u03b8\u03b1\u03c1\u03c7\u03af\u03b1\u03c2","content_text_answersresponsetext":"\u03a3\u03c9\u03c3\u03c4\u03ae \u03b1\u03c0\u03ac\u03bd\u03c4\u03b7\u03c3\u03b7:","content_text4":"\u03c5\u03c0\u03bf\u03b2\u03bf\u03bb\u03ae"}}
