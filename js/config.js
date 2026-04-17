@@ -21,10 +21,10 @@ YLEARN_CONFIG.env = {
 		'trackerSaveUrl':'http://localhost/agoralms/customtracker/recorder.php?courseid='+YLEARN_CONFIG.lms.courseId+'&pageid='
 	},
 	'staging': {
-		'rootUrl':'http://159.69.151.13/agoralms/ccourses/'+YLEARN_CONFIG.lms.courseId+'/',
-		'adminUrl':'http://159.69.151.13/agoralms/customadmin/admin-api.php',
-	  	'adminTmpl':'http://159.69.151.13/agoralms/customadmin/tmpl_config.php?course='+YLEARN_CONFIG.lms.courseId,
-		'trackerSaveUrl':'http://7159.69.151.13/agoralms/customtracker/recorder.php?courseid='+YLEARN_CONFIG.lms.courseId+'&pageid='
+		'rootUrl':'http://159.69.151.13/cecl/ccourses/'+YLEARN_CONFIG.lms.courseId+'/',
+		'adminUrl':'http://159.69.151.13/cecl/customadmin/admin-api.php',
+	  	'adminTmpl':'http://159.69.151.13/cecl/customadmin/tmpl_config.php?course='+YLEARN_CONFIG.lms.courseId,
+		'trackerSaveUrl':'http://7159.69.151.13/cecl/customtracker/recorder.php?courseid='+YLEARN_CONFIG.lms.courseId+'&pageid='
 	},
 	'production': {
 		'rootUrl':'https://learn.agora-parl.org/ccourses/'+YLEARN_CONFIG.lms.courseId+'/',
